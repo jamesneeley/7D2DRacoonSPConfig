@@ -1,0 +1,553 @@
+<recipes>
+
+
+<!-- Expanded Food Mod -->
+<recipe name="applePie" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="egg" count="1" />
+	<ingredient name="flour" count="1" />
+	<ingredient name="bowlWater" count="1" />
+	<ingredient name="Apple" count="3" />
+</recipe>
+
+<recipe name="appleCider" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="Apple" count="2" />
+	<ingredient name="emptyJar" count="1" />
+</recipe>
+
+<recipe name="baconAndEggs" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="egg" count="2"/>
+	<ingredient name="rawMeat" count="1"/>
+</recipe>
+
+<recipe name="baconEggSandwich" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="baconAndEggs" count="2"/>
+	<ingredient name="Bread" count="1"/>
+</recipe>
+
+<recipe name="bakedPotato" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="potato" count="1"/>
+</recipe>
+
+<recipe name="beer" count="1" craft_area="chemistryStation">
+	<ingredient name="hopsFlower" count="4"/>
+	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="Wheat" count="1"/>
+</recipe>
+
+<recipe name="beer" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="hopsFlower" count="4"/>
+	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="Wheat" count="1"/>
+</recipe>
+
+<recipe name="biscuit" count="1" craft_area="campfire" craft_tool="bowlWater">
+	<ingredient name="flour" count="1"/>
+</recipe>
+
+<recipe name="biscuit" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bowlWater" count="1" />
+	<ingredient name="flour" count="1"/>
+</recipe>
+
+<recipe name="biscuitJam" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="biscuit" count="1"/>
+    <ingredient name="blueberries" count="1" />
+</recipe>
+
+<recipe name="blueberryJam" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="blueberries" count="12" />
+	<ingredient name="emptyJar" count="1" />
+</recipe>
+
+<recipe name="blueberryPie" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="egg" count="1" />
+	<ingredient name="flour" count="1" />
+	<ingredient name="bowlWater" count="1" />
+	<ingredient name="blueberries" count="3" />
+</recipe>
+
+<recipe name="boiledMeat" count="1" craft_area="campfire" craft_tool="bowlWater">
+	<ingredient name="rawMeat" count="1"/>
+</recipe>
+
+<recipe name="boiledMeat" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="bowl" count="1" craft_area="campfire">
+	<ingredient name="clayLump" count="3"/>
+</recipe>
+
+<recipe name="bowlWater" count="1">
+	<ingredient name="bottledWater" count="1" />
+	<ingredient name="bowl" count="1" />
+</recipe>
+
+<recipe name="bottledWater" count="1">
+	<ingredient name="bowlWater" count="1" />
+	<ingredient name="emptyJar" count="1" />
+</recipe>
+
+<recipe name="bottledWater" count="1">
+	 <ingredient name="purificationTablets" count="1" />      
+<ingredient name="bottledRiverWater" count="1" />
+</recipe>     
+
+<recipe name="bottledWater" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="snowBall" count="1"/>
+	<ingredient name="emptyJar" count="1"/>
+</recipe>
+
+<recipe name="bottledWater" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bottledRiverWater" count="1"/>
+</recipe>
+
+<recipe name="bottledRiverWater" count="1" craft_area="campfire">
+	<ingredient name="snowBall" count="1"/>
+	<ingredient name="emptyJar" count="1"/>
+</recipe>
+
+<recipe name="bowlFruit" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="foodYuccaFruit" count="3" />
+	<ingredient name="blueberries" count="3" />
+	<ingredient name="Grapes" count="2" />
+	<ingredient name="Apple" count="1" />
+</recipe>
+
+<recipe name="bowlFruit" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canPears" count="2" />
+</recipe>
+
+<recipe name="bowlChili" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canChili" count="2" />
+</recipe>
+
+<recipe name="bowlMiso" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canMiso" count="2" />
+</recipe>
+
+<recipe name="bowlPasta" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canPasta" count="2" />
+</recipe>
+
+<recipe name="bowlRamenNoodles" count="1" craft_area="campfire" craft_tool="cookingGrill">
+    <ingredient name="ramenNoodles" count="1" />
+	<ingredient name="bowlWater" count="1" />
+</recipe>
+
+<recipe name="bowlSoup" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canSoup" count="2" />
+</recipe>
+
+<recipe name="bowlStock" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canStock" count="2" />
+</recipe>
+
+<recipe name="bowlWater" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="bowlMurkyWater" count="1"/>
+</recipe>
+
+<recipe name="Bread" count="1" craft_area="campfire" craft_tool="bowlWater">
+	<ingredient name="flour" count="1"/>	
+</recipe>
+
+<recipe name="Bread" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="flour" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="canBoiledWater" count="1" craft_area="campfire">
+	<ingredient name="canMurkyWater" count="1"/>
+</recipe>
+
+<recipe name="canBoiledWater" count="1" craft_area="campfire">
+	<ingredient name="snowBall" count="1"/>
+	<ingredient name="canEmpty" count="1"/>
+</recipe>
+
+<recipe name="canMeatStew" count="1"  craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="meatStew" count="1" craft_tool="cookingPot"/>
+	<ingredient name="canEmpty" count="1" />
+</recipe>
+
+<recipe name="canLokiStew" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="lokiStew" count="1" />
+	<ingredient name="canEmpty" count="1" />
+</recipe>
+
+<recipe name="canVegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="vegetableStew" count="1" />
+	<ingredient name="canEmpty" count="1" />
+</recipe>
+
+<recipe name="canChunkyMeatStew" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="stewChunkyMeat" count="1" />
+	<ingredient name="canEmpty" count="1" />
+</recipe>
+
+<recipe name="charredMeat" count="1" craft_area="campfire">
+	<ingredient name="rawMeat" count="1"/>
+</recipe>
+
+<recipe name="charredMeat" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="1"/>
+</recipe>
+
+<recipe name="coffee" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="coffeeBeans" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="cornBread" count="1" craft_area="campfire" craft_tool="bowlWater">
+	<ingredient name="cornMeal" count="1"/>
+</recipe>
+
+<recipe name="cornBread" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="cornMeal" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="cornbreadJam" count="1"  craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="cornBread" count="1" />
+	<ingredient name="blueberries" count="1" />
+</recipe>
+
+<recipe name="cornMeal" count="1" craft_area="campfire">
+	<ingredient name="corn" count="1"/>
+</recipe>
+
+<recipe name="cornOnTheCob" count="1" craft_area="campfire" craft_tool="bowlWater">
+	<ingredient name="corn" count="1"/>
+</recipe>
+
+<recipe name="cornOnTheCob" count="1" craft_area="campfire">
+	<ingredient name="corn" count="1"/>
+	<ingredient name="bowlWater" count="1" />
+</recipe>
+
+<recipe name="creamedCorn" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="bowlWater" count="1" />
+	<ingredient name="corn" count="2" />
+</recipe>
+
+<recipe name="creamedCorn" count="1" craft_area="campfire" craft_tool="bowlWater" >
+	<ingredient name="corn" count="2" />
+</recipe>
+
+<recipe name="creamedCorn" count="1" craft_area="campfire">
+	<ingredient name="corn" count="2" />
+	<ingredient name="bottledWater" count="1" />
+	<ingredient name="bowl" count="1" />
+</recipe>
+
+<recipe name="dinnerPlate" count="1" craft_area="campfire">
+	<ingredient name="clayLump" count="4"/>
+</recipe>
+
+<recipe name="drinkEnergy" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="canEmpty" count="1"/>
+	<ingredient name="blueberries" count="1"/>
+	<ingredient name="snowberryJuice" count="1"/>
+	<ingredient name="vitamins" count="1"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<recipe name="drinkHealth" count="1" >
+	<ingredient name="painkillers" count="1" />  
+	<ingredient name="vitamins" count="1" />  
+	<ingredient name="bottledWater" count="1" />
+</recipe>
+
+<recipe name="drinkHealth" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="painkillers" count="1" />  
+	<ingredient name="vitamins" count="1" />  
+	<ingredient name="bottledWater" count="1" />
+</recipe>
+
+<recipe name="eggboiled" count="1" craft_area="campfire" craft_tool="bowlWater">
+	<ingredient name="egg" count="1"/>
+</recipe>
+
+<recipe name="eggboiled" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="egg" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="fishPie" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="egg" count="1" />
+    <ingredient name="flour" count="1" />
+    <ingredient name="bowlWater" count="1" />
+    <ingredient name="canTuna" count="2" />
+</recipe>
+
+<recipe name="fishPie" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="egg" count="1" />
+    <ingredient name="flour" count="1" />
+    <ingredient name="bowlWater" count="1" />
+    <ingredient name="canSalmon" count="2" />
+</recipe>
+
+<recipe name="flour" count="1" craft_area="campfire">
+	<ingredient name="Wheat" count="5"/>
+</recipe>
+
+<recipe name="foodYuccaJuice" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="foodYuccaFruit" count="4"/>
+	<ingredient name="emptyJar" count="1"/>
+</recipe>
+
+<recipe name="grainAlcohol" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="Wheat" count="3"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="grilledMeat" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="2"/>
+</recipe>
+
+<recipe name="grillSteak" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="3"/>
+	<ingredient name="animalFat" count="1"/>
+</recipe>
+
+<recipe name="Hamburger" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="Bread" count="2"/>
+</recipe>
+
+<recipe name="honeyHam" count="1" craft_area="campfire" craft_tool="cookingGrill" >
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="boiledMeat" count="1"/>
+</recipe>
+
+<recipe name="lokiWater" count="1" craft_area="chemistryStation" craft_tool="waterFilter">
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="lokiWater" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="crushedSand" count="1"/>
+	<ingredient name="charcoalChips" count="1"/>
+	<ingredient name="yuccaFibers" count="1"/>
+</recipe>
+
+<recipe name="lokiStew" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="potato" count="1"/>
+	<ingredient name="corn" count="1"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<recipe name="lokiStew" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="assortedVegetables" count="4"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<recipe name="Mead" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="Wheat" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="foodHoney" count="1"/>
+</recipe>
+
+<recipe name="meadBlueberry" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="Wheat" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+	<ingredient name="foodHoney" count="1"/>
+	<ingredient name="blueberries" count="1"/>
+</recipe>
+
+<recipe name="mealBreakfast" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="3"/>
+	<ingredient name="egg" count="3"/>
+	<ingredient name="dinnerPlate" count="1"/>
+</recipe>
+
+<recipe name="mealDinner" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="5"/>
+	<ingredient name="assortedVegetables" count="4"/>
+	<ingredient name="dinnerPlate" count="1"/>
+</recipe>
+
+<recipe name="meatStew" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="5"/>
+	<ingredient name="potato" count="5"/>
+	<ingredient name="corn" count="5"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<recipe name="meatStew" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="5"/>
+	<ingredient name="assortedVegetables" count="10"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<recipe name="meatStew" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="5"/>
+	<ingredient name="canVegetableStew" count="10"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<recipe name="megaCrush" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="canEmpty" count="1"/>
+	<ingredient name="blueberries" count="1"/>
+	<ingredient name="snowberryJuice" count="1"/>
+	<ingredient name="vitamins" count="1"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<recipe name="militaryRation" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="grilledMeat" count="1"/>
+	<ingredient name="assortedVegetables" count="1"/>
+	<ingredient name="blueberries" count="1"/>
+	<ingredient name="scrapPlastics" count="1"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<recipe name="Omelet" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="egg" count="2"/>
+	<ingredient name="animalFat" count="1"/>
+	<ingredient name="rawMeat" count="1"/>
+</recipe>
+
+<recipe name="pooStew" count="1" craft_area="campfire">
+	<ingredient name="turd" count="5"/>
+	<ingredient name="bottledWater" count="10"/>
+</recipe>
+
+<recipe name="rawMeat" count="1" >
+  <ingredient name="sealedMeat" count="1" />
+</recipe>
+
+<recipe name="redTea" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="chrysanthemumPlant" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="scrambledEggs" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="egg" count="2"/>
+	<ingredient name="animalFat" count="1"/>
+</recipe>
+
+<recipe name="sealedMeat" count="1" craft_time="0.1" >
+  <ingredient name="rawMeat" count="1" />
+  <ingredient name="stripsClingwrap" count="1" />
+</recipe>
+
+<recipe name="soupChicken" count="1"  craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canChicken" count="2" />
+</recipe>
+
+<recipe name="soupChicken" count="1"  craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canSoup" count="2" />
+</recipe>
+
+<recipe name="snowberryJuice" count="1"  craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="snowberryPlant" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="stewChunkyMeat" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="bowlWater" count="1" />
+	<ingredient name="rawMeat" count="3"/>
+</recipe>
+
+<recipe name="soupChunkyBeef" count="1"  craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canBeef" count="2" />
+</recipe>
+
+<recipe name="soupLamb" count="1"  craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canLamb" count="2" />
+</recipe>
+
+<recipe name="soupMushroom" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="bowlWater" count="1"/>
+<ingredient name="mushrooms" count="3" />
+</recipe>
+
+<recipe name="soupPea" count="1"  craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="bowl" count="1" />
+	<ingredient name="canPeas" count="2" />
+</recipe>
+
+<recipe name="snowberryJuice" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="snowberryExtract" count="1"/>
+	<ingredient name="blueberries" count="2"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="steakSandwich" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="grillSteak" count="1"/>
+	<ingredient name="Bread" count="2"/>
+</recipe>
+
+<recipe name="tunaSandwich" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="canTuna" count="1"/>
+	<ingredient name="Bread" count="2"/>
+</recipe>
+
+<recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="potato" count="5"/>
+	<ingredient name="corn" count="5"/>
+	<ingredient name="mushrooms" count="5"/>
+	<ingredient name="bowlWater" count="1"/>
+</recipe>
+
+<recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="bowlWater" count="1" />
+    <ingredient name="assortedVegetables" count="6" />
+ </recipe>
+
+<recipe name="warmsoupChicken" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="soupChicken" count="1" />
+</recipe>
+
+<recipe name="warmbowlChili" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="bowlChili" count="1" />
+</recipe>
+
+<recipe name="warmsoupChunkyBeef" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="soupChunkyBeef" count="1" />
+</recipe>
+
+<recipe name="warmsoupLamb" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="soupLamb" count="1" />
+</recipe>
+
+<recipe name="warmsoupPea" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="soupPea" count="1" />
+</recipe>
+
+<recipe name="warmbowlPasta" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="bowlPasta" count="1" />
+</recipe>
+
+<recipe name="warmbowlSoup" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="bowlSoup" count="1" />
+</recipe>
+
+<recipe name="warmbowlStock" count="1" craft_area="campfire" craft_tool="cookingPot" >
+	<ingredient name="bowlStock" count="1" />
+</recipe>
+
+<recipe name="waterPurified" count="1" craft_area="campfire" craft_tool="cookingPot">
+	 <ingredient name="purificationTablets" count="1" />  
+	 <ingredient name="bottledWater" count="1" />
+</recipe>  
+
+
+
+
+</recipes>

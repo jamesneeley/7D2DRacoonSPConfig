@@ -1,0 +1,30 @@
+			<prefab name="Kam_LakesideLodge" min_count="1" max_count="1" />
+			<prefab name="Gallery(by_TopMinder_and_Pille)" min_count="1" max_count="1" />
+			<prefab name="hanging_gardens" min_count="1" max_count="1" />
+			<prefab name="castle_vip" min_count="1" max_count="1" />
+			<prefab name="DepartmentStore" min_count="1" max_count="1" />
+			<prefab name="jzmodTW2fl_apt" min_count="1" max_count="1" />
+
+<prefab name="ouch_airport1" min_count="1" max_count="1" />
+<prefab name="ouch_airport2" min_count="1" max_count="1" />
+<prefab name="ThePyramid_01" min_count="1" max_count="1" />
+<prefab name="PrisonF_Test" min_count="1" max_count="1" />
+<prefab name="Guppyville" min_count="1" max_count="1" />
+<prefab name="mil_hangar01" min_count="1" max_count="1" />
+<prefab name="mil_helipad01" min_count="1" max_count="1" />
+<prefab name="cabinofgreatness" min_count="1" max_count="1" />
+<prefab name="shopping_center_01" min_count="1" max_count="1" />
+<prefab name="AptComplex" min_count="1" max_count="1" />
+<prefab name="corner1" min_count="1" max_count="1" />
+<prefab name="corner2" min_count="1" max_count="1" />
+<prefab name="corner3" min_count="1" max_count="1" />
+<prefab name="corner4" min_count="1" max_count="1" />
+<prefab name="PerishtonBlock1" min_count="1" max_count="1" />
+<prefab name="PerishtonBlock2" min_count="1" max_count="1" />
+<prefab name="PerishtonBlock3" min_count="1" max_count="1" />
+<prefab name="PerishtonBlock4" min_count="1" max_count="1" />
+<prefab name="PerishtonBlock5" min_count="1" max_count="1" />
+<prefab name="PerishtonBlock6" min_count="1" max_count="1" />
+
+<prefab name="skyscraper_pille" min_count="1" max_count="1" />
+<prefab name="skyhigh" min_count="1" max_count="1" />

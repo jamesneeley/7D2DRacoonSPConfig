@@ -1,0 +1,113 @@
+
+
+<block id="1856" name="plasticmums">
+	<property name="DescriptionKey" value="plasticplants"/>
+	<property name="CustomIcon" value="plantedChrysanthemum1"/>
+	<property name="Material" value="wood_weak"/>
+	<property name="Shape" value="BillboardPlant"/>
+	<property name="Mesh" value="grass"/>
+	<property name="LightOpacity" value="2"/>
+	<property name="Texture" value="244"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<drop event="Destroy" name="scrapPlastics" count="1,2"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="StabilitySupport" value="false"/>
+</block>
+
+<block id="1857" name="plasticgoldenrod">
+	<property name="Extends" value="plasticmums"/>
+	<property name="Texture" value="362"/>	
+</block>
+
+<block id="1858" name="plasticcoffee">
+	<property name="CustomIcon" value="plantedCoffee3Harvest"/>
+	<property name="Extends" value="plasticmums"/>
+	<property name="Texture" value="395"/>
+</block>
+
+<block id="1859" name="plasticcorn">
+	<property name="CustomIcon" value="plantedCorn3Harvest"/>
+	<property name="Extends" value="plasticmums"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="corn_harvest_shape"/>
+	<property name="Mesh" value="cutoutmoveable"/>
+	<property name="Texture" value="529"/>
+</block>
+
+<block id="1860" name="plasticcorndead">
+	<property name="CustomIcon" value="plantedCorn3Harvest"/>
+	<property name="CustomIconTint" value="139,69,19"/>
+	<property name="Extends" value="plasticmums"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="corn_dead_shape"/>
+	<property name="Mesh" value="cutoutmoveable"/>	
+	<property name="Texture" value="530"/>
+</block>
+
+<block id="1861" name="plasticpotato">
+	<property name="CustomIcon" value="plantedPotato3Harvest"/>
+	<property name="Extends" value="plasticmums"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
+	<property name="Collide" value="melee"/>
+</block>
+
+<block id="1862" name="plasticblueberry">
+	<property name="CustomIcon" value="plantedBlueberry3Harvest"/>
+	<property name="Extends" value="plasticmums"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>									 
+</block>
+
+<block id="1863" name="plasticsnowberry">
+	<property name="CustomIcon" value="snowberry3Harvest"/>
+	<property name="Extends" value="plasticmums"/>
+	<property name="Texture" value="568"/>
+</block>
+
+
+<block id="1864" name="plasticplantedHop2">
+	<property name="Extends" value="plasticmums"/>
+	<property name="CustomIcon" value="hopSeed"/>
+	<property name="Texture" value="448"/>
+</block>
+
+<block id="1865" name="plasticplantedHop3">
+	<property name="Extends" value="plasticmums"/>
+	<property name="CustomIcon" value="plantedHop3Harvest"/>
+	<property name="Texture" value="449"/>
+</block>
+
+<block id="1866" name="plasticplantedCotton3">
+	<property name="Extends" value="plasticmums"/>
+	<property name="CustomIcon" value="plantedCotton3Harvest"/>
+	<property name="Texture" value="363"/>
+</block>
+
+<block id="1867" name="plasticplantedGoldenrod2">
+	<property name="Extends" value="plasticmums"/>
+	<property name="CustomIcon" value="goldenrodSeed"/>
+	<property name="Texture" value="402"/>
+</block>
+
+<block id="1868" name="plasticplantedGoldenrod3">
+	<property name="Extends" value="plasticmums"/>
+	<property name="CustomIcon" value="plantedGoldenrod3Harvest"/>
+	<property name="Texture" value="362"/>
+</block>
+
+<block id="1869" name="plasticplantedChrysanthemum3">
+	<property name="Extends" value="plasticmums"/>
+	<property name="CustomIcon" value="plantedChrysanthemum3Harvest"/>
+	<property name="Texture" value="244"/>
+</block>
+
+<block id="1870" name="plasticplantedCotton2">
+	<property name="Extends" value="plasticmums"/>
+	<property name="CustomIcon" value="cottonSeed"/>
+	<property name="Texture" value="20"/>
+</block>

@@ -1,0 +1,1675 @@
+<styles>
+<!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
+
+	<style name="SMXUnitFrameWindow" type="window">
+		<style_entry name="pos" value="9,20" />
+		<style_entry name="size" value="140,96" />
+		<style_entry name="anchor" value="BottomLeft" />
+	</style>
+
+	<style name="SMXItemStack">
+		<style_entry name="select_color" value="[beige]" />
+		<style_entry name="press_color" value="[limeGreen]" />
+		<style_entry name="final_pressed_color" value="[lightGrey]" />
+		<style_entry name="background_color" value="[mediumGrey]" />
+		<style_entry name="highlight_color" value="[hoverColor]" />
+		<style_entry name="holding_color" value="[white]" />
+		<style_entry name="width" value="82" />
+		<style_entry name="height" value="82" />
+		<style_entry name="hover_icon_grow" value="1.5" />
+		<style_entry name="on_press" value="true" />
+		<style_entry name="sound_volume" value="0.75" />
+		<style_entry name="pickup_sound" value="[pickup_click]" />
+		<style_entry name="place_sound" value="[place_click]" />
+	</style>
+	
+	<style name="SMXcompass.window" type="window">
+		<style_entry name="pos" value="-200,-9" />
+		<style_entry name="size" value="400,43" />
+		<style_entry name="anchor" value="CenterTop" />
+	</style>
+
+	<style name="SMXcompass.window.background" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="texture" value="@file:Mods\SMX\UITextures\compassbg.png" /> <!-- Online Mac: @http://i.imgur.com/t3XdV7o.png -->
+		<style_entry name="type" value="sliced" />
+		<style_entry name="size" value="492,140" />
+		<style_entry name="pos" value="-60,10" />
+	</style>
+
+	<style name="SMXcompass.window.indicator" type="texture">
+		<style_entry name="depth" value="9" />
+		<style_entry name="texture" value="@file:Mods\SMX\UITextures\indicator.png" /> <!-- Online Mac: @http://i.imgur.com/te7nHcB.png -->
+		<style_entry name="type" value="sliced" />
+		<style_entry name="size" value="64,64" />
+		<style_entry name="pos" value="215,10" />
+	</style>
+
+	<style name="SMXcompass.window.compass.texture" type="texture">
+		<style_entry name="depth" value="8" />
+		<style_entry name="height" value="23" />
+		<style_entry name="width" value="300" />
+		<style_entry name="pos" value="50, -3" />
+		<style_entry name="color" value="[iconColor]" />
+		<style_entry name="tooltip" value="CHARACTER" />
+		<style_entry name="texture" value="Textures/UI/ui_game_compass" />
+	</style>
+
+	<style name="SMXDayTimeFrame.window" type="window">
+		<style_entry name="pos" value="-12,50" />
+		<style_entry name="size" value="100,100" />
+		<style_entry name="anchor" value="LeftTop" />
+	</style>
+
+	<style name="SMXLevelXP.window" type="window">
+		<style_entry name="pos" value="-30,-15" />
+		<style_entry name="size" value="140,96" />
+		<style_entry name="anchor" value="LeftTop" />
+	</style>
+
+	<style name="SMXTempFrame.window" type="window">
+		<style_entry name="pos" value="-180,140" />
+		<style_entry name="size" value="300,100" />
+		<style_entry name="anchor" value="LeftBottom" />
+	</style>
+
+	<style type="sprite" name="SMXicon15px">
+		<style_entry name="color" value="[iconColor]"/>
+		<style_entry name="width" value="15"/>
+		<style_entry name="height" value="15"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+
+<!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
+
+	<global>
+		<!-- 	
+			GLOBAL STYLE ENTRIES
+				Any entry in global is accessible by [name] example: value="[white]" 
+				These values are also accessible from window and control xml files 
+				as long as this style file is included in a window file.
+		-->
+		
+		<!--NAMED COLORS-->
+		<style_entry name="limeGreen" 		value="222,255,163,255"/>
+		<style_entry name="tan" 					value="182,166,123,255"/>
+		<style_entry name="beige" 				value="222,206,163"/>
+		<style_entry name="borderColor" 	value="0,0,0"/>
+		<style_entry name="darkGrey" 		value="64,64,64"/>
+		<style_entry name="mediumGrey" 	value="96,96,96"/>
+		<style_entry name="lightGrey" 		value="128,128,128"/>
+		<style_entry name="white" 				value="255,255,255"/>
+		<style_entry name="black" 				value="0,0,0"/>
+		<style_entry name="red" 					value="255,0,0"/>
+		<style_entry name="green" 					value="0,255,0"/>
+		<style_entry name="transparent" 	value="0,0,0,0"/>
+		<style_entry name="gold" 					value="245,196,0"/>
+		<style_entry name="yellow" 					value="247,255,0"/>
+		
+		<style_entry name="white_half_alpha" 				value="255,255,255,128"/>
+		<style_entry name="mediumGrey_half_alpha" 	value="96,96,96,128"/>
+		<style_entry name="darkGrey_half_alpha" 		value="64,64,64,128"/>
+		<style_entry name="black_half_alpha" 				value="0,0,0,128"/>
+		
+		<style_entry name="white_quarter_alpha" 			value="255,255,255,192"/>
+		
+		<!--<style_entry name="iconColor" 						value="255,255,255" />
+		<style_entry name="labelColor" 						value="255,255,255" />
+		<style_entry name="selectedColor" 					value="222,206,163" />
+		<style_entry name="hoverColor"						value="250,255,163" />		
+		<style_entry name="disabledLabelColor"				value="160,160,160" />-->
+		<style_entry name="iconColor" value="255,255,255" />
+		<style_entry name="labelColor" value="255,255,255" />
+		<style_entry name="labelColor2" value="221,205,163" />
+		<style_entry name="labelColor3" value="221,205,163,200" />
+		<style_entry name="hoverColor" value="70,255,70" />
+		<style_entry name="selectedColor" value="254,182,71,255" />
+		<style_entry name="disabledLabelColor" value="160,160,160" />
+		
+		<!--NAMED SPRITES-->
+		<style_entry name="default_sprite" value="menu_empty"/>
+		
+		<!--NAMED SOUNDS-->
+		<style_entry name="default_click" 	value="/UI/ui_menu_click"/>
+		<style_entry name="start" 				value="/UI/ui_menu_start"/>
+		<style_entry name="back" 				value="/UI/ui_menu_back"/>
+		<style_entry name="craft_click" 		value="/Crafting/craft_click_craft"/>
+		<style_entry name="paging_click"		value="/UI/ui_tab" />
+		<style_entry name="recipe_click" 	value="/Crafting/craft_click_recipe"/>
+		<style_entry name="pickup_click" 	value="/Crafting/craft_take_item"/>
+		<style_entry name="place_click" 	value="/Crafting/craft_place_item"/>
+		<style_entry name="remove_waypoint" 	value="/UI/ui_waypoint_delete"/>
+		<style_entry name="ulDurabilityColor" value="160,160,160" />
+		<style_entry name="ulColorResRadiation" value="76,255,0,255" />
+		<style_entry name="ulColorResFire" value="200,0,0,255" />
+		<style_entry name="ulColorExperienceBar" value="0,255,0,255" />
+		<style_entry name="ulColorBarelyVisible" value="0,0,0,1" />
+		<style_entry name="ulColorRecipeEnabled" value="255,255,255,255" />
+		<style_entry name="ulColorRecipeDisabled" value="255,255,255,200" />
+		<style_entry name="ulColorSkillEnabled" value="255,255,255,255" />
+		<style_entry name="ulColorSkillDisabled" value="160,160,160,150" />
+		<style_entry name="uiColorRecipeHaveCount" value="150,150,150,150" />
+		<style_entry name="ulColorForeground" value="117,233,179,40" />
+		<style_entry name="ulColorForegroundHover" value="117,233,179,100" />
+		<style_entry name="ulColorForegroundPress" value="117,233,179,150" />
+		<style_entry name="DECEA3" value="222,206,163,255" />
+		<style_entry name="ulColorToolRequired" value="255,102,0,255" />
+	</global>
+	
+	<!--LABELS-->
+	<style type="label">
+		<style_entry name="color" value="[labelColor]"/>
+		<style_entry name="font_face" value="AgencyB_32p"/>
+		<style_entry name="font_size" value="28"/>
+		<style_entry name="justify" value="left"/>
+		<style_entry name="effect" value="none"/>
+		<style_entry name="pivot" value="topleft"/>
+		<style_entry name="text" value=""/>
+		<style_entry name="upper_case" value="true" />
+	</style>
+	
+	<style type="label" name="protection">
+		<style_entry name="width" value="50"/>
+		<style_entry name="height" value="28"/>
+		<style_entry name="font_size" value="26"/>
+	</style>
+	
+	<style type="label" name="icon30px">
+		<style_entry name="width" value="30"/>
+		<style_entry name="height" value="30"/>
+	</style>
+	
+	<!--SPRITES-->
+	<style type="sprite">
+		<style_entry name="atlas" value="UIAtlas"/>
+		<style_entry name="sprite" value="[default_sprite]"/>
+		<style_entry name="color" value="[white]"/>
+	</style>
+	
+	<style type="sprite" name="protection">
+		<style_entry name="color" value="[iconColor]"/>
+		<style_entry name="width" value="26"/>
+		<style_entry name="height" value="26"/>
+		<style_entry name="foregroundlayer" value="true"/>
+	</style>
+	
+	<style type="sprite" name="icon48px">
+		<style_entry name="color" value="[iconColor]"/>
+		<style_entry name="width" value="48"/>
+		<style_entry name="height" value="48"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<style type="sprite" name="icon32px">
+		<style_entry name="color" value="[iconColor]"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<style type="sprite" name="icon30px">
+		<style_entry name="color" value="[iconColor]"/>
+		<style_entry name="width" value="30"/>
+		<style_entry name="height" value="30"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<style type="sprite" name="icon22px">
+		<style_entry name="color" value="[iconColor]"/>
+		<style_entry name="width" value="22"/>
+		<style_entry name="height" value="22"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<!--BUTTONS-->
+	<style type="button">
+		<style_entry name="atlas" value="UIAtlas"/>
+		<style_entry name="sprite" value="[default_sprite]"/>
+		<style_entry name="defaultcolor" value="[iconColor]"/>
+		<style_entry name="hovercolor" value="[hoverColor]" />
+		<style_entry name="selectedcolor" value="[selectedColor]" />
+		<style_entry name="hoverscale" value="1.25" />
+	</style>
+	
+	<style type="button" name="icon32px">
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<style type="button" name="icon30px">
+		<style_entry name="width" value="30"/>
+		<style_entry name="height" value="30"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<style type="button" name="icon22px">
+		<style_entry name="width" value="22"/>
+		<style_entry name="height" value="22"/>
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	
+	<!--ITEM STACKS-->
+	<!--<style name="itemStack">
+		<style_entry name="select_color" value="[red]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="64,64,64,128"/>
+		<style_entry name="highlight_color" value="[red]"/>
+		<style_entry name="holding_color" value="[red]"/>
+		<style_entry name="width" value="72"/>
+		<style_entry name="height" value="72"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>-->
+	<style name="itemStack">
+		<style_entry name="select_color" value="[beige]" />
+		<style_entry name="press_color" value="[limeGreen]" />
+		<style_entry name="final_pressed_color" value="[lightGrey]" />
+		<style_entry name="background_color" value="[mediumGrey]" />
+		<style_entry name="highlight_color" value="100,255,100" />
+		<style_entry name="holding_color" value="[white]" />
+		<style_entry name="size" value="72,72" />
+		<style_entry name="hover_icon_grow" value="1.5" />
+		<style_entry name="on_press" value="true" />
+		<style_entry name="sound_volume" value="0.75" />
+		<style_entry name="pickup_sound" value="[pickup_click]" />
+		<style_entry name="place_sound" value="[place_click]" />
+	</style>	
+	
+	<style name="vehicleStack">
+		<style_entry name="background_color" value="[darkGrey]" />
+		<style_entry name="highlight_color" value="[lightGrey]" />
+		<style_entry name="width" value="374" />
+		<style_entry name="height" value="58" />
+		<style_entry name="hover_icon_grow" value="1.5" />
+		<style_entry name="on_press" value="true" />
+		<style_entry name="sound_volume" value="0.75" />
+		<style_entry name="pickup_sound" value="[pickup_click]" />
+		<style_entry name="place_sound" value="[place_click]" />
+	</style>
+	
+	<!--<style name="itemPartStack">
+		<style_entry name="background_color" value="[darkGrey]"/>
+		<style_entry name="highlight_color" value="[mediumGrey]"/>
+		<style_entry name="width" value="374"/>
+		<style_entry name="height" value="58"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>-->
+	<style name="itemPartStack">
+		<style_entry name="background_color" value="[ulColorForeground]" />
+		<style_entry name="highlight_color" value="[ulColorForegroundHover]" />
+		<style_entry name="hover_icon_grow" value="1.5" />
+		<style_entry name="on_press" value="true" />
+		<style_entry name="sound_volume" value="0.75" />
+		<style_entry name="pickup_sound" value="[pickup_click]" />
+		<style_entry name="place_sound" value="[place_click]" />
+	</style>
+	
+	<!--USER INTERACTION-->
+	<style name="press">
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound" value="[default_click]"/>
+		<style_entry name="sound_play_on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+	</style>
+	
+	<style name="hover">
+		<style_entry name="on_hover" value="true"/>
+	</style>
+	
+	<style name="scroll">
+		<style_entry name="on_scroll" value="true"/>
+	</style>
+	
+	<style name="drag">
+		<style_entry name="on_drag" value="true"/>
+	</style>
+	
+	<style name="header.panel" type="panel">
+		<style_entry name="name" value="header"/>
+		<style_entry name="height" value="43"/>
+		<style_entry name="depth" value="1"/>
+		<style_entry name="backgroundspritename" value="ui_game_panel_header"/>
+	</style>
+	
+	<style name="header.icon" type="sprite">
+		<style_entry name="name" value="windowIcon"/>
+		<style_entry name="depth" value="2"/>
+		<style_entry name="pos" value="5,-5"/>
+		<style_entry name="size" value="32,32"/>
+	</style>
+	
+	<style name="header.name" type="label">
+		<style_entry name="name" value="windowName"/>
+		<style_entry name="depth" value="2"/>
+		<style_entry name="pos" value="42,-6"/>
+		<style_entry name="size" value="250,32"/>
+		<style_entry name="font_size" value="32"/>
+	</style>
+	
+	<style name="header.timer" type="label">
+		<style_entry name="name" value="burnTimeLeft"/>
+		<style_entry name="depth" value="2"/>
+		<style_entry name="size" value="64,28"/>
+		<style_entry name="text" value="00:00"/>
+		<style_entry name="font_size" value="26"/>
+		<style_entry name="color" value="[mediumGrey]"/>
+		<style_entry name="justify" value="right"/>
+		<style_entry name="anchor_side" value="right"/>
+		<style_entry name="pivot" value="right"/>
+		<style_entry name="anchor_run_once" value="false"/>
+		<style_entry name="anchor_offset" value="-68,0"/>
+	</style>
+	
+	<!--PAGING WINDOW-->
+	<style name="paging.window" type="window">
+		<style_entry name="pos" value="-310,-9"/>
+		<style_entry name="size" value="600,43"/>
+		<style_entry name="anchor" value="CenterTop"/>
+		<style_entry name="normal_color" value="[iconColor]" />
+		<style_entry name="select_color" value="[selectedColor]" />
+		<style_entry name="hover_color" value="[lightGrey]" />
+	</style>
+	
+	<!--PAGING WINDOW TITLE-->
+	<style name="paging.window.name" type="label">
+		<style_entry name="depth" value="4"/>
+		<style_entry name="font_size" value="36"/>
+		<style_entry name="pivot" value="center"/>
+		<style_entry name="justify" value="center"/>
+		<style_entry name="pos" value="300,-20"/>
+		<style_entry name="name" value="lblWindowName"/>
+	</style>
+	
+	<!--PAGING WINDOW BACKGROUND-->
+	<style name="paging.window.background.border" type="sprite">
+		<style_entry name="depth" value="0"/>
+		<style_entry name="sprite" value="ui_game_header_fill"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="color" value="[black]"/>
+	</style>
+	
+	<style name="paging.window.background" type="sprite">
+		<style_entry name="depth" value="1"/>
+		<style_entry name="sprite" value="ui_game_header_fill"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="size" value="594,37"/>
+		<style_entry name="pos" value="3,-3"/>
+		<style_entry name="color" value="[black]"/>
+	</style>
+	
+	<style name="paging.window.name.background" type="sprite">
+		<style_entry name="depth" value="2"/>
+		<style_entry name="sprite" value="ui_game_header_insert"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="pivot" value="center"/>
+		<style_entry name="size" value="200,38"/>
+		<style_entry name="pos" value="300,-21"/>
+		<style_entry name="color" value="[black]"/>
+	</style>
+	
+	<style name="paging.window.name.foreground" type="sprite">
+		<style_entry name="depth" value="3"/>
+		<style_entry name="sprite" value="ui_game_header_fill_gradient"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="pivot" value="center"/>
+		<style_entry name="size" value="200,38"/>
+		<style_entry name="pos" value="300,-21"/>
+		<style_entry name="color" value="[red]"/>
+	</style>
+	
+	<!--PAGING WINDOW ICONS-->
+	<style name="paging.window.icon.crafting" type="button">
+		<style_entry name="sound" value="[paging_click]"/>
+		<style_entry name="pos" value="31,-21"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="Crafting"/>
+		<style_entry name="sprite" value="ui_game_symbol_hammer"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="tooltip" value="CRAFTING" />
+		<style_entry name="tooltip_key" value="xuiCrafting" />
+		<style_entry name="hoverscale" value="1.25" />
+		<style_entry name="pivot" value="center" />
+	</style>
+	
+	<style name="paging.window.icon.character" type="button">
+		<style_entry name="sound" value="[paging_click]"/>
+		<style_entry name="pos" value="76,-21"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="Character"/>
+		<style_entry name="sprite" value="ui_game_symbol_character"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="tooltip" value="CHARACTER" />
+		<style_entry name="tooltip_key" value="xuiCharacter" />
+		<style_entry name="hoverscale" value="1.25" />
+		<style_entry name="pivot" value="center" />
+	</style>
+	
+	<style name="paging.window.icon.map" type="button">
+		<style_entry name="sound" value="[paging_click]"/>
+		<style_entry name="pos" value="126,-21"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="Map"/>
+		<style_entry name="sprite" value="ui_game_symbol_map"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="tooltip" value="MAP" />
+		<style_entry name="tooltip_key" value="xuiMap" />
+		<style_entry name="hoverscale" value="1.25" />
+		<style_entry name="pivot" value="center" />
+	</style>
+	
+	<style name="paging.window.icon.skills" type="button">
+		<style_entry name="sound" value="[paging_click]"/>
+		<style_entry name="pos" value="171,-21"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="Skills"/>
+		<style_entry name="sprite" value="ui_game_symbol_skills"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="tooltip" value="SKILLS" />
+		<style_entry name="tooltip_key" value="xuiSkills" />
+		<style_entry name="hoverscale" value="1.25" />
+		<style_entry name="pivot" value="center" />
+	</style>
+	
+	<style name="paging.window.icon.quests" type="button">
+		<style_entry name="sound" value="[paging_click]"/>
+		<style_entry name="pos" value="426,-21"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="Quests"/>
+		<style_entry name="sprite" value="ui_game_symbol_quest"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="tooltip" value="QUESTS" />
+		<style_entry name="tooltip_key" value="xuiQuests" />
+		<style_entry name="hoverscale" value="1.25" />
+		<style_entry name="pivot" value="center" />
+	</style>
+	
+	<style name="paging.window.icon.journal" type="button">
+		<style_entry name="sound" value="[paging_click]"/>
+		<style_entry name="pos" value="476,-21"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="Journal"/>
+		<style_entry name="sprite" value="ui_game_symbol_pen"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="tooltip" value="JOURNAL" />
+		<style_entry name="tooltip_key" value="xuiJournal" />
+		<style_entry name="hoverscale" value="1.25" />
+		<style_entry name="pivot" value="center" />
+	</style>
+	
+	<style name="paging.window.icon.players" type="button">
+		<style_entry name="sound" value="[paging_click]"/>
+		<style_entry name="pos" value="526,-21"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="Players"/>
+		<style_entry name="sprite" value="ui_game_symbol_players"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="tooltip" value="PLAYERS" />
+		<style_entry name="tooltip_key" value="xuiPlayers" />
+		<style_entry name="hoverscale" value="1.25" />
+		<style_entry name="pivot" value="center" />
+	</style>
+	
+	<style name="paging.window.icon.creative" type="button">
+		<style_entry name="sound" value="[paging_click]"/>
+		<style_entry name="pos" value="576,-21"/>
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="Creative"/>
+		<style_entry name="sprite" value="ui_game_symbol_lightbulb"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+		<style_entry name="tooltip" value="CREATIVE" />
+		<style_entry name="tooltip_key" value="xuiCreative" />
+		<style_entry name="hoverscale" value="1.25" />
+		<style_entry name="pivot" value="center" />
+	</style>
+	
+	<style name="nonpaging.window" type="window">
+		<style_entry name="pos" value="-200,-9"/>
+		<style_entry name="size" value="400,43"/>
+		<style_entry name="anchor" value="CenterTop"/>
+	</style>
+	
+	<style name="nonpaging.window.background" type="sprite">
+		<style_entry name="depth" value="1"/>
+		<style_entry name="sprite" value="ui_game_header_fill"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="size" value="394,37"/>
+		<style_entry name="pos" value="3,-3"/>
+		<style_entry name="color" value="[lightGrey]"/>
+	</style>
+	
+	<style name="nonpaging.window.name.background" type="sprite">
+		<style_entry name="depth" value="2"/>
+		<style_entry name="sprite" value="ui_game_header_insert"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="pivot" value="center"/>
+		<style_entry name="size" value="250,38"/>
+		<style_entry name="pos" value="200,-21"/>
+		<style_entry name="color" value="[black]"/>
+	</style>
+	
+	<style name="nonpaging.window.name.foreground" type="sprite">
+		<style_entry name="depth" value="3"/>
+		<style_entry name="sprite" value="ui_game_header_fill_gradient"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="pivot" value="center"/>
+		<style_entry name="size" value="200,38"/>
+		<style_entry name="pos" value="200,-21"/>
+		<style_entry name="color" value="[white_half_alpha]"/>
+	</style>
+	
+	<style name="nonpaging.window.name" type="label">
+		<style_entry name="depth" value="4"/>
+		<style_entry name="font_size" value="36"/>
+		<style_entry name="pivot" value="center"/>
+		<style_entry name="justify" value="center"/>
+		<style_entry name="pos" value="200,-20"/>
+		<style_entry name="name" value="lblWindowName"/>
+	</style>
+	
+	<style name="workstation.reserve.name" type="label">
+		<style_entry name="depth" value="2"/>
+		<style_entry name="height" value="24"/>
+		<style_entry name="width" value="53"/>
+	</style>
+	
+	<style name="workstation.reserve.weight" type="label">
+		<style_entry name="depth" value="2"/>
+		<style_entry name="height" value="24"/>
+		<style_entry name="width" value="74"/>
+		<style_entry name="color" value="[beige]"/>
+	</style>
+	
+	<!--<style name="compass.window" type="window">
+		<style_entry name="pos" value="-200,-9"/>
+		<style_entry name="size" value="400,43"/>
+		<style_entry name="anchor" value="CenterTop"/>
+	</style>-->
+	<style name="compass.window" type="window">
+		<style_entry name="pos" value="-250,-4" />
+		<style_entry name="size" value="500,43" />
+		<style_entry name="anchor" value="CenterTop" />
+	</style>
+	
+	<!--<style name="compass.window.background.border" type="sprite">
+		<style_entry name="depth" value="0"/>
+		<style_entry name="sprite" value="ui_game_header_fill"/>
+		<style_entry name="size" value="396,43"/> 
+		<style_entry name="pos" value="2,0"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="color" value="0,0,0,100"/>
+	</style>-->
+	<style name="compass.window.background.border" type="sprite">
+		<style_entry name="depth" value="0" />
+		<style_entry name="sprite" value="ui_game_header_fill" />
+		<style_entry name="size" value="305,43" />
+		<style_entry name="pos" value="48,0" />
+		<style_entry name="type" value="sliced" />
+		<style_entry name="color" value="0,0,0,100" />
+	</style>
+	
+	<!--<style name="compass.window.background" type="sprite">
+		<style_entry name="depth" value="1"/>
+		<style_entry name="sprite" value="ui_game_header_fill"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="size" value="392,37"/> 
+		<style_entry name="pos" value="4,-3"/> 
+		<style_entry name="color" value="128,128,128,100"/>
+	</style>-->
+	<style name="compass.window.background" type="sprite">
+		<style_entry name="depth" value="1" />
+		<style_entry name="sprite" value="ui_game_header_fill" />
+		<style_entry name="type" value="sliced" />
+		<style_entry name="size" value="300,37" />
+		<style_entry name="pos" value="50,-3" />
+		<style_entry name="color" value="128,128,128,100" />
+	</style>	
+	
+	<!--<style name="compass.window.icon.compass" type="sprite">
+		<style_entry name="depth" value="3"/>
+		<style_entry name="name" value="crafting"/>
+		<style_entry name="sprite" value="ui_game_symbol_compass"/>
+		<style_entry name="width" value="32"/>
+		<style_entry name="height" value="32"/>
+	</style>-->
+	<style name="compass.window.icon.compass" type="sprite">
+		<style_entry name="depth" value="3" />
+		<style_entry name="name" value="crafting" />
+		<style_entry name="sprite" value="ui_game_symbol_compass" />
+		<style_entry name="width" value="32" />
+		<style_entry name="height" value="32" />
+	</style>
+	
+	<!--<style name="compass.window.compass.background" type="sprite">
+		<style_entry name="depth" value="5"/>
+		<style_entry name="sprite" value="ui_game_header_fill"/>
+		<style_entry name="type" value="sliced"/>
+		<style_entry name="color" value="0,0,0,100"/>
+		<style_entry name="pos" value="4,-3"/>
+		<style_entry name="width" value="392" />
+		<style_entry name="height" value="37" />
+	</style>-->
+	<style name="compass.window.compass.background" type="sprite">
+		<style_entry name="depth" value="5" />
+		<style_entry name="sprite" value="ui_game_header_fill" />
+		<style_entry name="type" value="sliced" />
+		<style_entry name="color" value="0,0,0,100" />
+		<style_entry name="pos" value="50,-3" />
+		<style_entry name="width" value="300" />
+		<style_entry name="height" value="37" />
+	</style>
+	
+	<!--<style name="compass.window.compass.texture" type="texture">
+		<style_entry name="depth" value="8"/>
+		<style_entry name="height" value="23" />
+		<style_entry name="width" value="392" />
+		<style_entry name="pos" value="4, -15" />
+		<style_entry name="color" value="[iconColor]"/>
+		<style_entry name="tooltip" value="CHARACTER" />
+		<style_entry name="texture" value="Textures/UI/ui_game_compass" />
+	</style>-->
+	<style name="compass.window.compass.texture" type="texture">
+		<style_entry name="depth" value="8" />
+		<style_entry name="height" value="23" />
+		<style_entry name="width" value="400" />
+		<style_entry name="pos" value="50, -22" />
+		<style_entry name="color" value="[iconColor]" />
+		<style_entry name="tooltip" value="CHARACTER" />
+		<style_entry name="texture" value="Textures/UI/ui_game_compass" />
+	</style>
+	
+<!-- END_MOD: Red Eagle LXIX's Custom HUD : A13.4(b6) : v0.04 - inspired by Sirillion's HUD mod: http://steamcommunity.com/app/251570/discussions/5/494631967664775812 -->
+	<style name="crafting.info.window" type="window">
+		<style_entry name="valid_color" value="[green]" />
+		<style_entry name="invalid_color" value="[red]" />
+		<style_entry name="valid_sprite" value="ui_game_symbol_check" />
+		<style_entry name="invalid_sprite" value="ui_game_symbol_x" />
+		<style_entry name="width" value="603" />
+		<style_entry name="height" value="400" />
+	</style>
+	
+	<style name="hidden">
+		<style_entry name="size" value="0,0" />
+	</style>
+	<style name="sPanelIcon" type="sprite">
+		<style_entry name="depth" value="5" />
+		<style_entry name="pos" value="27,-43" />
+		<style_entry name="size" value="116,80" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="color" value="[labelColor]" />
+	</style>
+	<style name="sPanelTitle" type="label">
+		<style_entry name="name" value="windowName" />
+		<style_entry name="depth" value="5" />
+		<style_entry name="pos" value="43,18" />
+		<style_entry name="size" value="250,28" />
+		<style_entry name="font_size" value="28" />
+		<style_entry name="effect" value="outline" />
+		<style_entry name="color" value="[labelColor]" />
+		<style_entry name="text" value="LABEL MISSING" />
+	</style>
+	<style name="sPanelDesc" type="label">
+		<style_entry name="name" value="descriptionText" />
+		<style_entry name="depth" value="5" />
+		<style_entry name="pos" value="177,-31" />
+		<style_entry name="size" value="222,135" />
+		<style_entry name="font_size" value="22" />
+		<style_entry name="effect" value="outline" />
+		<style_entry name="text" value="LABEL MISSING" />
+	</style>
+	<style name="sPanelLabel">
+		<style_entry name="depth" value="2" />
+		<style_entry name="pos" value="7,-3" />
+		<style_entry name="size" value="375,28" />
+		<style_entry name="font_size" value="22" />
+		<style_entry name="color" value="[labelColor]" />
+		<style_entry name="justify" value="left" />
+		<style_entry name="effect" value="outline" />
+	</style>
+	<style name="sPanelTimerFuel">
+		<style_entry name="depth" value="3" />
+		<style_entry name="pos" value="6,-3" />
+		<style_entry name="font_size" value="22" />
+		<style_entry name="color" value="[labelColor]" />
+		<style_entry name="anchor_offset" value="-243,42" />
+		<style_entry name="effect" value="outline" />
+	</style>
+	<style name="sImage">
+		<style_entry name="size" value="116,80" />
+		<style_entry name="pivot" value="TopLeft" />
+		<style_entry name="globalopacity" value="true" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="type" value="Sliced" />
+	</style>
+	<style name="sExperienceBar">
+		<style_entry name="depth" value="7" />
+		<style_entry name="size" value="582,9" />
+		<style_entry name="pos" value="5,-5" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="color" value="[ulColorExperienceBar]" />
+		<style_entry name="sprite" value="ulHudXP" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="type" value="filled" />
+	</style>
+	<style name="ulmIconSortBackpack" type="button">
+		<style_entry name="name" value="btnSort" />
+		<style_entry name="depth" value="8" />
+		<style_entry name="pivot" value="center" />
+		<style_entry name="size" value="22,22" />
+		<style_entry name="color" value="[iconColor]" />
+		<style_entry name="defaultcolor" value="[labelColor]" />
+		<style_entry name="hovercolor" value="[hoverColor]" />
+		<style_entry name="selectedcolor" value="[hoverColor]" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="on_press" value="true" />
+		<style_entry name="on_hover" value="true" />
+		<style_entry name="sound" value="[paging_click]" />
+		<style_entry name="sound_play_on_press" value="true" />
+		<style_entry name="sound_volume" value="0.75" />
+		<style_entry name="tooltip_key" value="lblSortInventory" />
+		<style_entry name="sprite" value="ui_game_symbol_backpack" />
+	</style>
+	<style name="ulmIconCurrency" type="texture">
+		<style_entry name="depth" value="8" />
+		<style_entry name="size" value="22,22" />
+		<style_entry name="color" value="[labelColor]" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/coins.png" />
+	</style>
+	<style name="ulmIcon22" type="texture">
+		<style_entry name="name" value="windowIcon" />
+		<style_entry name="depth" value="8" />
+		<style_entry name="pos" value="13,15" />
+		<style_entry name="size" value="22,22" />
+		<style_entry name="color" value="[labelColor]" />
+	</style>
+	<style name="ulmCenterPanelTitle" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="5,-4" />
+		<style_entry name="size" value="620,38" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/CenterPanel/title.png" />
+	</style>
+	<style name="ulmCenterPanelBG" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,31" />
+		<style_entry name="size" value="650,860" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/CenterPanel/bg.png" />
+	</style>
+	<style name="ulmPainting" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="957,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/CenterPanel/painting.png" />
+	</style>
+	<style name="ulmPaintingTextureBG" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="15,-15" />
+		<style_entry name="size" value="230,230" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/painttexture.png" />
+	</style>
+	<style name="ulmCreative" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="957,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/creative.png" />
+	</style>
+	<style name="ulmMinibike" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="957,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/minibike.png" />
+	</style>
+	<style name="ulmAssemble" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="358,565" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/assemble.png" />
+	</style>
+	<style name="ulmSpotlight" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="280,245" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/spotlight.png" />
+	</style>
+	<style name="ulmTurret" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="280,565" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/turret.png" />
+	</style>
+	<style name="ulmTrigger" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="280,565" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/trigger.png" />
+	</style>
+	<style name="ulmGenerator" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="280,525" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/generator.png" />
+	</style>
+	<style name="ulmGeneratorPower" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="245,93" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/generatorPower.png" />
+	</style>
+	<style name="ulmBackpack80" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="657,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/CenterPanel/backpack80.png" />
+	</style>
+	<style name="ulmMap" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="752,815" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Map/map.png" />
+	</style>
+	<style name="ulmMapWaypointList" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="340,815" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Map/list.png" />
+	</style>
+	<style name="ulmListForeground" type="texture">
+		<style_entry name="depth" value="4" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Buttons/list.png" />
+	</style>
+	<style name="ulmMapLegend" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="230,280" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Map/legend.png" />
+	</style>
+	<style name="ulmMapSelectWaypoint" type="texture">
+		<style_entry name="depth" value="100" />
+		<style_entry name="size" value="77,480" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Map/wpSetList.png" />
+	</style>
+	<style name="ulmMapHighlightWaypoint" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="260,59" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Map/wpSave.png" />
+	</style>
+	<style name="ulmMapSetWaypoint" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="285,53" />
+		<style_entry name="pos" value="-26,27" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Map/wpSet.png" />
+	</style>
+	<style name="ulmQuestsDescription" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="700,795" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Journal/quest.png" />
+	</style>
+	<style name="ulmQuestRequirementsFG" type="texture">
+		<style_entry name="depth" value="4" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Journal/reqFG.png" />
+	</style>
+	<style name="ulmQuestRequirementsFG2" type="texture">
+		<style_entry name="depth" value="4" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Journal/reqFG2.png" />
+	</style>
+	<style name="ulmQuestRequirementsBG" type="texture">
+		<style_entry name="depth" value="4" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Journal/reqBG.png" />
+	</style>
+	<style name="ulmJournalDescription" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="657,795" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Journal/desc.png" />
+	</style>
+	<style name="ulmJournalList" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="432,795" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Journal/list.png" />
+	</style>
+	<style name="ulmPlayerList" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="1200,820" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/CenterPanel/players.png" />
+	</style>
+	<style name="ulmCamera" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="1242,910" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/CenterPanel/camera.png" />
+	</style>
+	<style name="ulmBackpack72" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="657,795" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/CenterPanel/backpack72.png" />
+	</style>
+	<style name="ulmBackpack32" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="357,720" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/CenterPanel/backpack32.png" />
+	</style>
+	<style name="ulmEscMenu" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="0,130" />
+		<style_entry name="size" value="300,400" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/escMenu.png" />
+	</style>
+	<style name="ulmEscMenuLogo" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="-60,135" />
+		<style_entry name="size" value="372,159" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/logo.png" />
+	</style>
+	<style name="ulmPanelPlayer" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="420,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/player.png" />
+	</style>
+	<style name="ulmPanelCrafting" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="432,870" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/crafting.png" />
+	</style>
+	<style name="ulmPanelPerkList" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,31" />
+		<style_entry name="size" value="430,860" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/perklist.png" />
+	</style>
+	<style name="ulmPanelTitle" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="406,44" />
+		<style_entry name="pos" value="2,27" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/title.png" />
+	</style>
+	<style name="ulmPanelDesc" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="406,163" />
+		<style_entry name="pos" value="2,-15" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/desc.png" />
+	</style>
+	<style name="ulmPanelTop" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="392,38" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/top.png" />
+	</style>
+	<style name="ulmPanelTop2" type="texture">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/top2.png" />
+	</style>
+	<style name="ulmPanelBot" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="0,-112" />
+		<style_entry name="size" value="392,9" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/bot.png" />
+	</style>
+	<style name="ulmPanelMid" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="0,-38" />
+		<style_entry name="size" value="392,75" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/mid.png" />
+	</style>
+	<style name="ulmPanelCenterTop" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="612,38" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Skills/top.png" />
+	</style>
+	<style name="ulmPanelCenterBot" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="0,-112" />
+		<style_entry name="size" value="612,9" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Skills/bot.png" />
+	</style>
+	<style name="ulmPanelCenterMid" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="0,-38" />
+		<style_entry name="size" value="612,75" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Skills/mid.png" />
+	</style>
+	<style name="ulmPanelBG" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,60" />
+		<style_entry name="size" value="430,560" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/bg.png" />
+	</style>
+	<style name="ulmPanelWorkbench" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,60" />
+		<style_entry name="size" value="430,700" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/workbench.png" />
+	</style>
+	<style name="ulmPanelCampfire" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,60" />
+		<style_entry name="size" value="430,530" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/campfire.png" />
+	</style>
+	<style name="ulmPanelMixer" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,60" />
+		<style_entry name="size" value="430,585" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/campfire.png" />
+	</style>
+	<style name="ulmPanelCombine" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,60" />
+		<style_entry name="size" value="430,530" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/campfire.png" />
+	</style>	
+	<style name="ulmPanelForge" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,60" />
+		<style_entry name="size" value="430,800" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/forge.png" />
+	</style>
+	<style name="ulmPanelFuel+Tools" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="392,112" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/fuel+tools.png" />
+	</style>
+	<style name="ulmSlotBlueprint0" type="texture">
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="74,74" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/blueprint0.png" />
+	</style>
+	<style name="ulmSlotBlueprint1" type="texture">
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="74,74" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/blueprint1.png" />
+	</style>
+	<style name="ulmSlotPart0" type="texture">
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="74,74" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/part0.png" />
+	</style>
+	<style name="ulmSlotPart1" type="texture">
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="74,74" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/part1.png" />
+	</style>
+	<style name="ulmTestBG" type="texture">
+		<style_entry name="anchor_parent_id" value="gridBackground" />
+		<style_entry name="anchor_side" value="bottomright" />
+		<style_entry name="pivot" value="bottomleft" />
+		<style_entry name="anchor_run_once" value="false" />
+		<style_entry name="anchor_offset" value="0,0" />
+		<style_entry name="size" value="100,100" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/test.png" />
+	</style>
+	<style name="ulmButton1" type="texture">
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="260,80" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Buttons/1n.png" />
+	</style>
+	<style name="ulmSlotSkill0" type="texture">
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="374,64" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/skill0.png" />
+	</style>
+	<style name="ulmSlotSkill1" type="texture">
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="374,64" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/skill1.png" />
+	</style>
+	<style name="ulmSlotSkillLocked" type="texture">
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="374,64" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/skillLocked.png" />
+	</style>
+	<style name="ulmSlotSkillRequired" type="texture">
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="299,64" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/skillRequired.png" />
+	</style>
+	<style name="ulmSlotSkillExpBG" type="texture">
+		<style_entry name="depth" value="6" />
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="320,20" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/skillExpBG.png" />
+	</style>
+	<style name="ulmSlotSkillExpFG" type="texture">
+		<style_entry name="depth" value="8" />
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="320,20" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/skillExpFG.png" />
+	</style>
+	<style name="ulmSkillDescription" type="texture">
+		<style_entry name="depth" value="2" />
+		<style_entry name="size" value="452,274" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Skills/description.png" />
+	</style>
+	<style name="ulmSkillExpBG" type="texture">
+		<style_entry name="depth" value="6" />
+		<style_entry name="size" value="450,20" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Skills/exp.png" />
+	</style>
+	<style name="ulmSkillExpFG" type="texture">
+		<style_entry name="depth" value="8" />
+		<style_entry name="size" value="450,20" />
+		<style_entry name="globalopacity" value="true" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="type" value="Sliced" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Skills/expDivider.png" />
+	</style>
+	<style name="ulmQuestTrackTitle" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="400,85" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Quest/questTrackTitle.png" />
+	</style>
+	<style name="ulmQuestOffer" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="650,500" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Quest/offer.png" />
+	</style>
+	<style name="ulmQuestText" type="texture">
+		<style_entry name="depth" value="8" />
+		<style_entry name="size" value="610,330" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Quest/text.png" />
+	</style>
+	<style name="ulmPanelItemInfoBG" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="357,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/bg.png" />
+	</style>
+	<style name="ulmPanelInfoFG" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="357,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/item.png" />
+	</style>
+	<style name="ulmPanelInfoBuffs" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="357,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/buffs.png" />
+	</style>
+	<style name="ulmPanelInfoEmptyFG" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="357,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/empty.png" />
+	</style>
+	<style name="ulmPanelInfoCraftingFG" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="357,870" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/crafting.png" />
+	</style>
+	<style name="ulmLootingTopLeft" type="texture">
+		<style_entry name="depth" value="2" />
+		<style_entry name="size" value="61,42" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Loot/tl.png" />
+	</style>
+	<style name="ulmLootingTopRight" type="texture">
+		<style_entry name="depth" value="2" />
+		<style_entry name="size" value="61,42" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Loot/tr.png" />
+	</style>
+	<style name="ulmLootingTopCenter">
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulLootTopBG" />
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	<style name="ulmSlotBase" type="texture">
+		<style_entry name="depth" value="2" />
+		<style_entry name="size" value="75,75" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/75.png" />
+	</style>
+	<style name="ulmCheckbox" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="32,32" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Input/checkbox.png" />
+	</style>
+	<style name="ulmInputSmall" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="42,32" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Input/42x32.png" />
+	</style>
+	<style name="ulmInputSearch" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="202,32" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Input/202x32.png" />
+	</style>
+	<style name="ulmInputSearchNarrow" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="140,32" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Input/140x32.png" />
+	</style>
+	<style name="ulmItemRarity" type="texture">
+		<style_entry name="depth" value="3" />
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="74,74" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/rarity.png" />
+	</style>
+	<style name="ulmPreviewItemQL" type="sprite">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="170,173" />
+		<style_entry name="pos" value="-10,13" />
+		<style_entry name="pivot" value="TopLeft" />
+		<style_entry name="globalopacity" value="true" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulPreviewBG" />
+		<style_entry name="type" value="Sliced" />
+		<style_entry name="color" value="[ulDurabilityColor]" />
+	</style>
+	<style name="ulmPreviewItemBG" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,10" />
+		<style_entry name="size" value="170,170" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/itemBG.png" />
+	</style>
+	<style name="ulmPreviewItemFG" type="texture">
+		<style_entry name="depth" value="2" />
+		<style_entry name="pos" value="-10,10" />
+		<style_entry name="size" value="170,170" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/itemFG.png" />
+	</style>
+	<style name="ulmPreviewVehicleBG" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="pos" value="-10,10" />
+		<style_entry name="size" value="330,230" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/vehicleBG.png" />
+	</style>
+	<style name="ulmPreviewVehicleFG" type="texture">
+		<style_entry name="depth" value="2" />
+		<style_entry name="pos" value="-10,10" />
+		<style_entry name="size" value="330,230" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/Inspect/vehicleFG.png" />
+	</style>
+	<style name="ulmSignEdit" type="texture">
+		<style_entry name="depth" value="2" />
+		<style_entry name="pos" value="0,0" />
+		<style_entry name="size" value="357,275" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Windows/SidePanel/sign.png" />
+	</style>
+	<style name="iLeftClick" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="32,32" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/mouseL.png" />
+	</style>
+	<style name="iRightClick" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="32,32" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/mouseR.png" />
+	</style>
+	<style name="iCookware">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/cookware.png" />
+	</style>
+	<style name="iLab">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/lab.png" />
+	</style>
+	<style name="iWrench">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/wrench.png" />
+	</style>
+	<style name="iAnvil">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/anvil.png" />
+	</style>
+	<style name="iAmmo">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/ammo.png" />
+	</style>
+	<style name="iCarpenter">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/carpenter.png" />
+	</style>
+	<style name="iVice">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/vice.png" />
+	</style>
+	<style name="iCementMixer">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/mixer.png" />
+	</style>
+	<style name="iForge">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/forge.png" />
+	</style>
+	<style name="iCalendar">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/calendar.png" />
+	</style>
+	<style name="iTrashcan">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/trash.png" />
+	</style>
+	<style name="iPaint">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Icons/paint.png" />
+	</style>
+	<style name="ulmSlotItemBG" type="texture">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/normal.png" />
+	</style>
+	<style name="ulmSlotItemQueue" type="texture">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/queue.png" />
+	</style>
+	<style name="ulmSlotItemCancel" type="texture">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/Slots/cancel.png" />
+	</style>
+	<style name="ulmHudStatsRBG" type="texture">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/HUD/statsBarBG.png" />
+	</style>
+	<style name="ulmHudStatsLBG" type="texture">
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/HUD/statsBarBG2.png" />
+	</style>
+	<style name="ulmPagingHeader" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="760,90" />
+		<style_entry name="pos" value="-83,25" />
+		<style_entry name="pivot" value="TopLeft" />
+		<style_entry name="foregroundlayer" value="false" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/HUD/header.png" />
+	</style>
+	<style name="ulmCompass" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="900,90" />
+		<style_entry name="pivot" value="TopLeft" />
+		<style_entry name="foregroundlayer" value="false" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/HUD/compass.png" />
+	</style>
+	<style name="ulmHudBackground" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="1220,120" />
+		<style_entry name="pos" value="-310,30" />
+		<style_entry name="foregroundlayer" value="false" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/HUD/background.png" />
+	</style>
+	<style name="ulmHudVehicleBackground" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="700,90" />
+		<style_entry name="foregroundlayer" value="false" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/HUD/vehicle.png" />
+	</style>
+	<style name="ulmHudExpBarBG" type="texture">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="592,20" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/HUD/xpBG.png" />
+	</style>
+	<style name="ulmHudExpBarFill" type="sprite">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="582,9" />
+		<style_entry name="pos" value="5,-5" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulHudXP" />
+		<style_entry name="type" value="filled" />
+		<style_entry name="color" value="[ulColorExperienceBar]" />
+	</style>
+	<style name="ulmHudExpBarFG" type="texture">
+		<style_entry name="depth" value="2" />
+		<style_entry name="size" value="592,20" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/HUD/xpDivider.png" />
+	</style>
+	<style name="ulmHudWeaponBG" type="texture">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="267,80" />
+		<style_entry name="pos" value="-5,2" />
+		<style_entry name="foregroundlayer" value="false" />
+		<style_entry name="texture" value="@file:Mods/ZTLModIcons/Textures/UI/HUD/weaponBG.png" />
+	</style>
+	<style name="ulmHudSlotLabel">
+		<style_entry name="color" value="200,200,200,175" />
+		<style_entry name="depth" value="4" />
+		<style_entry name="pos" value="6,-4" />
+		<style_entry name="size" value="75,16" />
+		<style_entry name="justify" value="left" />
+		<style_entry name="effect" value="outline" />
+	</style>
+	<style name="ulmHudStatsRFG">
+		<style_entry name="depth" value="3" />
+		<style_entry name="name" value="BarContent" />
+		<style_entry name="pos" value="125,-15" />
+		<style_entry name="size" value="201,152" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulHudStats" />
+		<style_entry name="pivot" value="Center" />
+		<style_entry name="rotation" value="30" />
+		<style_entry name="type" value="filled" />
+	</style>
+	<style name="ulmHudStatsLFG">
+		<style_entry name="depth" value="3" />
+		<style_entry name="name" value="BarContent" />
+		<style_entry name="pos" value="125,-15" />
+		<style_entry name="size" value="201,152" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulHudStats" />
+		<style_entry name="pivot" value="Center" />
+		<style_entry name="rotation" value="150" />
+		<style_entry name="type" value="filled" />
+		<style_entry name="fill" value="0" />
+		<style_entry name="flip" value="Vertically" />
+	</style>
+	<style name="ulmHudBuffBG">
+		<style_entry name="depth" value="1" />
+		<style_entry name="name" value="Background" />
+		<style_entry name="pivot" value="center" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulHudBuffBG" />
+	</style>
+	<style name="ulButton1" type="button">
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulBtn1n" />
+		<style_entry name="hoversprite" value="ulBtn1h" />
+		<style_entry name="type" value="Sliced" />
+		<style_entry name="hoverscale" value="1.0" />
+	</style>
+	<style name="ulButtonList" type="button">
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulButtonListN" />
+		<style_entry name="hoversprite" value="ulButtonListH" />
+		<style_entry name="type" value="Sliced" />
+		<style_entry name="hoverscale" value="1.0" />
+	</style>
+	<style name="ulButton1Hover" type="button">
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="hoversprite" value="ulBtn1h" />
+		<style_entry name="type" value="Sliced" />
+		<style_entry name="hoverscale" value="1.0" />
+	</style>
+	<style name="ulButton2" type="button">
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulBtn2n" />
+		<style_entry name="hoversprite" value="ulBtn2h" />
+		<style_entry name="type" value="Sliced" />
+		<style_entry name="hoverscale" value="1.0" />
+		<style_entry name="on_hover" value="true" />
+	</style>
+	<style name="ulButton3" type="button">
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulBtn3n" />
+		<style_entry name="hoversprite" value="ulBtn3h" />
+		<style_entry name="type" value="Sliced" />
+		<style_entry name="hoverscale" value="1.0" />
+		<style_entry name="on_hover" value="true" />
+	</style>
+	<style name="ulButtonIcon" type="button">
+		<style_entry name="defaultcolor" value="[labelColor]" />
+		<style_entry name="hovercolor" value="[hoverColor]" />
+		<style_entry name="selectedcolor" value="[hoverColor]" />
+	</style>
+	<style name="ulTooltip">
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulTooltip" />
+		<style_entry name="type" value="Sliced" />
+	</style>
+	<style name="ulImage">
+		<style_entry name="size" value="116,80" />
+		<style_entry name="pivot" value="TopLeft" />
+		<style_entry name="globalopacity" value="true" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="type" value="Sliced" />
+	</style>
+	<style name="ulImageBG">
+		<style_entry name="size" value="116,80" />
+		<style_entry name="pivot" value="TopLeft" />
+		<style_entry name="globalopacity" value="true" />
+		<style_entry name="foregroundlayer" value="false" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="type" value="Sliced" />
+	</style>
+	<style name="ulWorkstationIcon" type="sprite">
+		<style_entry name="name" value="windowIcon" />
+		<style_entry name="depth" value="8" />
+		<style_entry name="pos" value="13,-12" />
+		<style_entry name="size" value="22,22" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="color" value="[labelColor]" />
+	</style>
+	<style name="ulWorkstationIconToolBench" type="sprite">
+		<style_entry name="name" value="windowIcon" />
+		<style_entry name="depth" value="8" />
+		<style_entry name="pos" value="13,-12" />
+		<style_entry name="size" value="22,22" />
+		<style_entry name="sprite" value="ulIconBenchVice" />
+		<style_entry name="color" value="[labelColor]" />
+	</style>
+	<style name="ulWorkstationIconST" type="sprite">
+		<style_entry name="name" value="itemPreview" />
+		<style_entry name="depth" value="8" />
+		<style_entry name="pos" value="27,-77" />
+		<style_entry name="size" value="116,80" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="color" value="[labelColor]" />
+	</style>
+	<style name="ulWorkstationTitle" type="label">
+		<style_entry name="name" value="windowName" />
+		<style_entry name="depth" value="8" />
+		<style_entry name="pos" value="43,-9" />
+		<style_entry name="size" value="250,28" />
+		<style_entry name="font_size" value="28" />
+		<style_entry name="effect" value="outline" />
+		<style_entry name="color" value="[labelColor]" />
+	</style>
+	<style name="ulWorkstationTitleBG" type="sprite">
+		<style_entry name="depth" value="1" />
+		<style_entry name="size" value="400,38" />
+		<style_entry name="pos" value="5,-4" />
+		<style_entry name="pivot" value="TopLeft" />
+		<style_entry name="globalopacity" value="true" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="type" value="Sliced" />
+	</style>
+	<style name="ulWorkstationDesc" type="label">
+		<style_entry name="name" value="descriptionText" />
+		<style_entry name="depth" value="8" />
+		<style_entry name="pos" value="174,-55" />
+		<style_entry name="size" value="225,144" />
+		<style_entry name="font_size" value="22" />
+		<style_entry name="effect" value="outline" />
+	</style>
+	<style name="ulWorkstationDescBG" type="sprite">
+		<style_entry name="name" value="background" />
+		<style_entry name="depth" value="3" />
+		<style_entry name="size" value="430,170" />
+		<style_entry name="pos" value="0,-42" />
+		<style_entry name="pivot" value="TopLeft" />
+		<style_entry name="globalopacity" value="true" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="type" value="Sliced" />
+	</style>
+	<style name="ulWorkstationBG" type="sprite">
+		<style_entry name="depth" value="0" />
+		<style_entry name="size" value="860,430" />
+		<style_entry name="pivot" value="TopLeft" />
+		<style_entry name="globalopacity" value="true" />
+		<style_entry name="foregroundlayer" value="true" />
+		<style_entry name="atlas" value="ItemIconAtlas" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="type" value="filled" />
+		<style_entry name="pos" value="-10,31" />
+	</style>
+	<style name="ulmHeader" type="panel">
+		<style_entry name="depth" value="2" />
+		<style_entry name="name" value="header" />
+		<style_entry name="pos" value="25,-32" />
+		<style_entry name="height" value="30" />
+		<style_entry name="disableautobackground" value="true" />
+	</style>
+	<style name="sHeaderIcon" type="sprite">
+		<style_entry name="depth" value="8" />
+		<style_entry name="name" value="windowIcon" />
+		<style_entry name="pos" value="0,-3" />
+		<style_entry name="size" value="22,22" />
+		<style_entry name="sprite" value="ulTransparent" />
+		<style_entry name="color" value="[labelColor]" />
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	<style name="sHeaderTitle" type="label">
+		<style_entry name="depth" value="8" />
+		<style_entry name="name" value="windowName" />
+		<style_entry name="pos" value="28,0" />
+		<style_entry name="size" value="330,28" />
+		<style_entry name="font_size" value="28" />
+		<style_entry name="effect" value="outline" />
+		<style_entry name="color" value="[labelColor]" />
+		<style_entry name="foregroundlayer" value="true" />
+	</style>
+	<style name="ulWindowCraftingInfo" type="window">
+		<style_entry name="valid_color" value="[green]" />
+		<style_entry name="invalid_color" value="[red]" />
+		<style_entry name="valid_sprite" value="ui_game_symbol_check" />
+		<style_entry name="invalid_sprite" value="ui_game_symbol_x" />
+	</style>
+
+
+
+	<!--Valmod Larger Backpack -->
+	<style name="itemStackInventory">
+		<style_entry name="select_color" value="[red]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="64,64,64,0"/>
+		<style_entry name="highlight_color" value="[red]"/>
+		<style_entry name="holding_color" value="[red]"/>
+		<style_entry name="width" value="62"/>
+		<style_entry name="height" value="62"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>
+	<!-- 200 BackPack Add-In -->
+	<style name="backpack_itemStack">
+		<style_entry name="select_color" value="[beige]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="[transparent]"/>
+		<style_entry name="highlight_color" value="[hoverColor]"/>
+		<style_entry name="holding_color" value="[white]"/>
+		<style_entry name="width" value="72"/>
+		<style_entry name="height" value="72"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>
+	
+</styles>
