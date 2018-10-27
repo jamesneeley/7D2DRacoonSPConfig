@@ -1342,7 +1342,7 @@
 	<property name="SoundDeath" value="Player_Female/player2painlg"/>
 	<property name="SoundSense" value="Player_Female/player2painlg"/>
 	<property name="HandItem" value="handZombieHorny"/>
-	<property name="LootListOnDeath" value="100"/>
+	<property name="LootListOnDeath" value="150"/>
 	<property name="WalkType" value="5"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
@@ -1364,7 +1364,7 @@
 	<property name="NightApproachSpeed" value="1.5"/>
 	<property name="PanicSpeed" value="30"/>
 	<property name="WalkType" value="2"/>
-	<property name="LootListOnDeath" value="101"/>	
+	<property name="LootListOnDeath" value="151"/>	
 	<property name="ExperienceGain" value="2000"/>
 	<property name="SoundRandom" value="Enemies/Zombie_Dogs/zombiedogroam"/>
 	<property name="SoundAlert" value="Enemies/Zombie_Dogs/zombiedogpain"/>
@@ -1399,7 +1399,7 @@
 	<property name="SoundSense" value="Player_Female/player2painlg"/>	
 	<property name="WalkType" value="5"/>
 	<property name="HandItem" value="handZombieDitz"/>	
-	<property name="LootListOnDeath" value="100"/>
+	<property name="LootListOnDeath" value="150"/>
 	<property name="ApproachSpeed" value="20.0"/>	
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
@@ -1456,7 +1456,7 @@
 	<property name="SoundSense"   value="Enemies/Acid_Puking_Hulk/hulksense" />
 	<property name="SoundFootstepModifier"  value="Animals/Bear/bear_footstep" />
 	<property name="HandItem"             value="GorillaBossHand" />
-	<property name="LootListOnDeath" value="102"/>
+	<property name="LootListOnDeath" value="152"/>
 	<property name="WalkType" value="1"/>
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
