@@ -4942,6 +4942,119 @@
 		<property name="Archetype" value="SurvivorZoey"/>
 		<property name="AIPackages" value="Human Basic, Human Ranged"/>
 	</entity_class>
+	<entity_class name="npcSurvivorHank" extends="npcSurvivorMaleRangedTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gun44Magnum,44MagBullet" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gun44Magnum,44MagBullet" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorHank"/>
+		<property name="AIPackages" value="Human Basic, Human Ranged"/>
+	</entity_class>
+	<entity_class name="npcSurvivorMiguel" extends="npcSurvivorMaleRangedTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunMP5,9mmBullet" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunMP5,9mmBullet" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorMiguel"/>
+		<property name="AIPackages" value="Human Basic, Human Ranged"/>
+	</entity_class>
+	<entity_class name="npcSurvivorGabrielle" extends="npcSurvivorFemaleRangedTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunMP5,9mmBullet" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunMP5,9mmBullet" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorGabrielle"/>
+		<property name="AIPackages" value="Human Basic, Human Ranged"/>
+	</entity_class>
+	<entity_class name="npcSurvivorAiden" extends="npcSurvivorMaleTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="huntingKnife" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="huntingKnife" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorAiden"/>
+		<property name="AIPackages" value="Human Basic, Human Melee"/>
+	</entity_class>
+	<entity_class name="npcSurvivorJeff" extends="npcSurvivorMaleRangedTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunHuntingRifle,762mmBullet" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunHuntingRifle,762mmBullet" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorJeff"/>
+		<property name="AIPackages" value="Human Basic, Human Ranged"/>
+	</entity_class>
+	<entity_class name="npcSurvivorCharlotte" extends="npcSurvivorFemaleTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubSpiked"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="clubSpiked"/>
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorCharlotte"/>
+		<property name="AIPackages" value="Human Basic, Human Melee"/>
+	</entity_class>
+	<entity_class name="npcSurvivorWillie" extends="npcSurvivorMaleRangedTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunMP5,9mmBullet" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunMP5,9mmBullet" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorWillie"/>
+		<property name="AIPackages" value="Human Basic, Human Ranged"/>
+	</entity_class>
+	<entity_class name="npcSurvivorHelen" extends="npcSurvivorFemaleRangedTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gun44Magnum,44MagBullet" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gun44Magnum,44MagBullet" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorHelen"/>
+		<property name="AIPackages" value="Human Basic, Human Ranged"/>
+	</entity_class>
+	<entity_class name="npcSurvivorVince" extends="npcSurvivorMaleTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubBarbed"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="clubBarbed"/>
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorVince"/>
+		<property name="AIPackages" value="Human Basic, Human Melee"/>
+	</entity_class>
+	<entity_class name="npcSurvivorMaria" extends="npcSurvivorFemaleRangedTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunHuntingRifle,762mmBullet" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunHuntingRifle,762mmBullet" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorMaria"/>
+		<property name="AIPackages" value="Human Basic, Human Ranged"/>
+	</entity_class>
+	<entity_class name="npcSurvivorRayah" extends="npcSurvivorFemaleTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="clubSpiked"/>
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="clubSpiked"/>
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorRayah"/>
+		<property name="AIPackages" value="Human Basic, Human Melee"/>
+	</entity_class>
+	<entity_class name="npcSurvivorChang" extends="npcSurvivorMaleTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="huntingKnife" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="huntingKnife" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorChang"/>
+		<property name="AIPackages" value="Human Basic, Human Melee"/>
+	</entity_class>
+	<entity_class name="npcSurvivorJack" extends="npcSurvivorMaleRangedTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gunMP5,9mmBullet" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gunMP5,9mmBullet" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorJack"/>
+		<property name="AIPackages" value="Human Basic, Human Ranged"/>
+	</entity_class>
+	<entity_class name="npcSurvivorClint" extends="npcSurvivorMaleRangedTemplate">
+		<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="gun44Magnum,44MagBullet" />
+		<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="gun44Magnum,44MagBullet" />
+		<property name="AttackTimeoutDay" value="0.2"/>
+		<property name="AttackTimeoutNight" value="0.3"/>
+		<property name="Archetype" value="SurvivorClint"/>
+		<property name="AIPackages" value="Human Basic, Human Ranged"/>
+	</entity_class>
+	
 <!-- Bandits -->	
 	<entity_class name="npcMaleMeleeBanditTemplate">
 		<property name="EntityType" value="Player"/>
