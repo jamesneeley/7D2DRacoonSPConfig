@@ -3866,78 +3866,88 @@
 </lootgroup>
 
 <lootgroup name="survivorGoodPants" >	
-	<item name="denimPants"	quality="50,100" /> 
-	<item name="blackDenimPants" quality="50,100" /> 
-	<item name="redDenimPants" quality="50,100" /> 
-	<item name="brownDenimPants" quality="50,100" />  
+	<item name="denimPants"	quality="50,300" /> 
+	<item name="blackDenimPants" quality="50,300" /> 
+	<item name="redDenimPants" quality="50,300" /> 
+	<item name="brownDenimPants" quality="50,300" />  
 </lootgroup>
 
 <lootgroup name="Survival_Pants" >	
 	<item group="survivorGoodPants" prob="0.3"/>
-	<item name="plantFiberPants" prob="0.7" quality="50,100" />  
+	<item name="plantFiberPants" prob="0.7" quality="50,300" />  
 </lootgroup>
 
 <lootgroup name="SurvivalGear" count="all">	
 	<item group="Survival_Shirts"/>
 	<item group="Survival_Pants"/>
 	<item name="wornBoots" quality="50,170" count="1"/>
-	<item name="canBeef" count="1"/>
-	<item name="painkillers" count="1"/>
-	<item name="bottledWater" count="1"/>	
-	<item name="bandage" count="1"/>
+	<item name="canBeef" count="2"/>
+	<item name="miningHelmet" count="1" quality="170,370"/>
+	<item name="flashlight02" count="1"/>
+	<item name="baconAndEggs" count="3"/>
+	<item name="painkillers" count="2"/>
+	<item name="bottledWater" count="10"/>	
+	<item name="bandage" count="2"/>
 	<item name="torch" />
 </lootgroup>
 
 <lootgroup name="HunterClass" count="all">	
 	<item group="SurvivalGear"/>
-	<item name="gunBoltRifle" count="1" quality="170,170"/>
-	<item name="762mmBullet" count="80"/>
-	<item name="huntingKnife" count="1" quality="200,200"/>
-	<item name="animalHideHood" count="1" quality="170,170"/>
+	<item name="gunBoltRifle" count="1" quality="170,370"/>
+	<item name="ulm762mmBulletST" count="180"/>
+	<item name="huntingKnife" count="1" quality="200,300"/>
+	<item name="animalHideHood" count="1" quality="170,370"/>
 	<item name="repairKit" count="4"/>
 	<item name="challengeClassHunter" count="1"/>
 	<item name="perkHunter" count="1"/>
+	<item name="huntingRifleSchematic" count="1"/>
+	<item name="huntingKnifeBook" count="1"/>
 </lootgroup>
 
 <lootgroup name="BuilderClass" count="all">
 	<item group="SurvivalGear"/>
-	<item group="hats"/>
-	<item name="clawHammer" count="1" quality="170,170"/>
-	<item name="fireaxeIron" count="1" quality="170,170"/>
+	<!-- <item group="hats"/> -->
+	<item name="clawHammer" count="1" quality="170,370"/>
+	<item name="fireaxeIron" count="1" quality="170,370"/>
 	<item name="wood" count="500"/>
 	<item name="woodFrameBlock" count="64"/>
 	<item name="carpenterKit" count="64"/>
-	<item name="gunPistol" count="1" quality="200,200"/>
-	<item name="9mmBullet" count="50"/>
+	<item name="gunPistol" count="1" quality="200,300"/>
+	<item name="ulm9mmBulletST" count="150"/>
 	<item name="repairKit" count="4"/>
 	<item name="challengeClassBuilder" count="1"/>
 	<item name="handSaw" count="1"/>
 	<item name="workbench" count="1"/>
 	<item name="perkBuilder" count="1"/>
+	<item name="pistolBook" count="1"/>
 </lootgroup>
 
 <lootgroup name="RiflemanClass" count="all">
 	<item group="SurvivalGear"/>
-	<item name="gunBoltRifle" count="1" quality="170,170"/>
-	<item name="huntingKnife" count="1" quality="200,200"/>
-	<item name="swatHelmet" count="1" quality="170,170"/>
-	<item name="762mmBullet" count="80"/>
+	<item name="gunBoltRifle" count="1" quality="170,370"/>
+	<item name="huntingKnife" count="1" quality="200,300"/>
+	<item name="swatHelmet" count="1" quality="170,370"/>
+	<item name="ulm762mmBulletST" count="180"/>
 	<item name="repairKit" count="4"/>
 	<item name="challengeClassRifleman" count="1"/>
 	<item name="perkRifleman" count="1"/>
+	<item name="huntingRifleSchematic" count="1"/>
+	<item name="huntingKnifeBook" count="1"/>
 </lootgroup>
 
 <lootgroup name="GunmanClass" count="all">
 	<item group="SurvivalGear"/>
 	<item name="cigar" count="1"/>
 	<item name="leatherDuster" count="1"/>
-	<item name="huntingKnife" count="1" quality="200,200"/>
-	<item name="cowboyHat" count="1"  quality="170,170"/>
-	<item name="gun44Magnum" count="1" quality="170,170"/>
-	<item name="44MagBullet" count="70"/>
+	<item name="huntingKnife" count="1" quality="200,300"/>
+	<item name="cowboyHat" count="1"  quality="170,370"/>
+	<item name="gun44Magnum" count="1" quality="170,370"/>
+	<item name="ul44MagBulletST" count="170"/>
 	<item name="repairKit" count="4"/>
 	<item name="challengeClassGunman" count="1"/>
 	<item name="perkGunman" count="1"/>
+	<item name="theEnforcerMagazine" count="1"/>
+	<item name="huntingKnifeBook" count="1"/>
 </lootgroup>
 
 <lootgroup name="VeteranClass" count="all">
@@ -3949,27 +3959,30 @@
 	<item name="bandage" count="1"/>
 	<item name="torch" />
 	<item name="militaryBoots" count="1"/>
-	<item name="gunMP5" count="1" quality="170,170"/>
-	<item name="huntingKnife" count="1" quality="200,200"/>
-	<item name="militaryHelmet" count="1"  quality="170,170"/>
+	<item name="gunMP5" count="1" quality="170,370"/>
+	<item name="huntingKnife" count="1" quality="200,300"/>
+	<item name="militaryHelmet" count="1"  quality="170,370"/>
 	<item name="repairKit" count="4"/>
-	<item name="9mmBullet" count="80"/>
+	<item name="ulm10mmBulletST" count="180"/>
 	<item name="challengeClassVeteran" count="1"/>
 	<item name="perkVeteran" count="1"/>
+	<item name="smgSchematics" count="1"/>
+	<item name="huntingKnifeBook" count="1"/>
 </lootgroup>
 
 <lootgroup name="MinerClass" count="all">
 	<item group="SurvivalGear"/>
-	<item name="miningHelmet" count="1" quality="170,170"/>
-	<item name="pickaxeIron" count="1" quality="250,250"/>
+	<!-- <item name="miningHelmet" count="1" quality="170,170"/> -->
+	<item name="pickaxeIron" count="1" quality="250,350"/>
 	<item name="forgedIron" count="10"/>
-	<item name="gunPistol" count="1" quality="150,150"/>
-	<item name="9mmBullet" count="50"/>
+	<item name="gunPistol" count="1" quality="150,350"/>
+	<item name="ulm9mmBulletST" count="150"/>
 	<item name="repairKit" count="4"/>
 	<item name="challengeClassMiner" count="1"/>
 	<item name="chisel" count="1"/>
 	<item name="cementMixer" count="1"/>
 	<item name="perkMiner" count="1"/>
+	<item name="pistolBook" count="1"/>
 </lootgroup>
 
 <lootgroup name="SurvivorClass" count="all">
@@ -3979,15 +3992,17 @@
 	<item name="bottledWater" count="2"/>	
 	<item name="torch" count="2"/>	
 	<item name="bandage" count="2"/>
-	<item name="flashlight02" count="1"/>
-	<item name="crossbow" count="1" quality="170,170"/>
-	<item name="ironCrossbowBolt" count="70"/>
+	<!-- <item name="flashlight02" count="1"/> -->
+	<item name="crossbow" count="1" quality="170,370"/>
+	<item name="ironCrossbowBolt" count="170"/>
 	<item name="cookingPot" count="1"/>
 	<item name="firstAidKit" count="1"/>
-	<item name="clothHat" count="1" quality="170,170"/>
-	<item name="huntingKnife" count="1" quality="170,170"/>
+	<!-- <item name="clothHat" count="1" quality="170,170"/> -->
+	<item name="huntingKnife" count="1" quality="170,370"/>
 	<item name="challengeClassSurvivor" count="1"/>
 	<item name="perkSurvivor" count="1"/>
+	<item name="crossbowSchematic" count="1"/>
+	<item name="huntingKnifeBook" count="1"/>
 </lootgroup>
 
 <lootgroup name="BruiserClass" count="all">
@@ -3996,12 +4011,14 @@
 	<item name="bottledWater" count="1"/>
 	<item name="firstAidBandage" count="4"/>
 	<item name="clubSpiked" count="1" quality="170,170"/>
-	<item name="gunSawedOffPumpShotgun" count="1" quality="170,170"/>
-	<item name="shotgunShell" count="60"/>
+	<item name="gunSawedOffPumpShotgun" count="1" quality="170,370"/>
+	<item name="shotgunShell" count="160"/>
 	<item name="antibiotics" count="2"/>
 	<item name="repairKit" count="4"/>
 	<item name="challengeClassBruiser" count="1"/>
 	<item name="perkBruiser" count="1"/>
+	<item name="clubSpikedSchematic" count="1"/>
+	<item name="sawedoffPumpShotgunSchematic" count="1"/>
 </lootgroup>
 
 <lootgroup name="MedicClass" count="all">
@@ -4010,24 +4027,28 @@
 	<item name="painkillers" count="4"/>
 	<item name="waterPurified" count="3"/>	
 	<item name="firstAidKit" count="3"/>
-	<item name="huntingKnife" count="1" quality="170,170"/>
+	<item name="huntingKnife" count="1" quality="170,370"/>
 	<item name="firstAidBandage" count="4"/>
 	<item name="Peroxide" count="3"/>
 	<item name="herbalAntibiotics" count="1"/>
-	<item name="gunPistol" count="1" quality="170,170"/>
-	<item name="9mmBullet" count="60"/>
+	<item name="gunPistol" count="1" quality="170,370"/>
+	<item name="9mmBullet" count="160"/>
 	<item name="repairKit" count="4"/>
 	<item name="beaker"/>
 	<item name="challengeClassMedic" count="1"/>
 	<item name="perkMedic" count="1"/>
+	<item name="huntingKnifeBook" count="1"/>
+	<item name="pistolBook" count="1"/>
 </lootgroup>
 
 <lootgroup name="WildcardClass" count="all">
 	<item group="SurvivalGear"/>
 	<item name="genericAmmoBox" count="3" />
-	<item name="casinoCoin" count="150"/>
+	<item name="casinoCoin" count="1500"/>
 	<item group="legendarymelee" />
 	<item name="perkWildcard" />
+	<item name="huntingKnifeBook" count="1"/>
+	<item name="pistolBook" count="1"/>
 </lootgroup>
 
 		<!-- Hunter Class -->	

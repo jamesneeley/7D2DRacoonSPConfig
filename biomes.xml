@@ -299,8 +299,6 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Mountains" />
 	</biome>
-
-
 	<!-- Forest Main Biome -->
 	<biome name="forest" biomemapcolor="#008D00" >
 		<weather>
@@ -439,8 +437,6 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Forest" />
 	</biome>
-
-
 	<!-- Pine Forest Main Biome  -->
 	<biome name="pine_forest" biomemapcolor="#004000" >
 		<weather>
@@ -598,8 +594,6 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Mountains" />
 	</biome>
-
-
 	<!-- Plains Main Biome-->
 	<biome name="plains" biomemapcolor="#00FF00" >
 		<weather>
@@ -758,8 +752,6 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Desert" />
 	</biome>
-
-
 	<!-- Desert Main Biome -->
 	<biome name="desert" biomemapcolor="#FFE477">
 		<weather>
@@ -891,8 +883,6 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Desert" />
 	</biome>
-
-
 	<!-- Water Main Biome -->
 	<biome name="water" biomemapcolor="#0063ff">
 		<weather>
@@ -1024,8 +1014,6 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="treeTallGrassDiagonal" prob =".35" />
 		</decorations>
 	</biome>
-
-
 	<!-- Radiated Main Biome -->
 	<biome name="radiated" biomemapcolor="#FF0000" radiationlevel="10">
 		<weather>
@@ -1059,8 +1047,6 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Hills" />
 	</biome>
-
-
 	<!-- Wasteland Main Biome -->
 	<biome name="wasteland" biomemapcolor="#ffa800" >
 		<weather>
@@ -1206,8 +1192,6 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Wasteland" />
 	</biome>
-
-
 	<!-- Burnt Forest Main Biome -->
 	<biome name="burnt_forest" biomemapcolor="#ba00ff" >
 		<weather>
@@ -1372,8 +1356,6 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Mountains" />
 	</biome>
-
-
 	<!-- City Main Biome Diersville -->
 	<biome name="city" biomemapcolor="#808080" >
 		<weather>
@@ -1440,8 +1422,6 @@ If you do not declare them, the decorations of the main biome are used.
 		<decorations></decorations>
 		<terrain class="City" />
 	</biome>
-
-
 	<!-- City Main Biome Gravestown -->
 	<biome name="city_wasteland" biomemapcolor="#c0c0c0" >
 		<weather>
@@ -1503,8 +1483,6 @@ If you do not declare them, the decorations of the main biome are used.
 		<decorations></decorations>
 		<terrain class="Mountains" />
 	</biome>
-
-
 	<!-- Wasteland Hub Biome Random Gen -->
 	<biome name="wasteland_hub" biomemapcolor="#a0a0a0" >
 		<weather>
@@ -1644,7 +1622,6 @@ If you do not declare them, the decorations of the main biome are used.
 		</decorations>
 		<terrain class="Wasteland" />
 	</biome>
-
 	<biome name="caveFloor" biomemapcolor="#a1a1a1" >
 		<!-- Decorations Main: Cave Floor -->
 		<decorations>
@@ -1662,7 +1639,6 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="cntApacheArtifactChest" prob=".00001" rotatemax="3"/>
 		</decorations>
 	</biome>
-
 	<biome name="caveCeiling" biomemapcolor="#a2a2a2" >
 		<!-- Decorations Main: Cave Ceiling -->
 		<decorations>
@@ -1674,15 +1650,7 @@ If you do not declare them, the decorations of the main biome are used.
 			<decoration type="block" blockname="stalactite04" prob="0.02" rotatemax="7"/>
 		</decorations>
 	</biome>
-
 </biomes>
-
-
-
-
-
-
-
 <!-- Street Parameters:
 	surfaceoffset(int): defines the number of blocks which is added to the toplevel of the street tile
 					negative means the tile will be placed in the ground; positive means the tile will be above the ground
@@ -1710,15 +1678,21 @@ If you do not declare them, the decorations of the main biome are used.
 		<decal texture="13" face="0" prob="0.001" />
 		<decal texture="14" face="0" prob="0.001" />
 		<decal texture="15" face="0" prob="0.001" />
-		<blockontop blockname="lootStreetHelper" prob="0.001" rotatemax="7"/>
-		<blockontop blockname="randomCarsHelper" prob="0.0015" rotatemax="3"/>
-		<blockontop blockname="tire" rotatemax="3" prob="0.001" />
-		<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="rock01" prob="0.0007" />
-		<blockontop blockname="rock02" prob="0.0007" />
-		<blockontop blockname="rock04"  prob="0.0007" />
+		<blockontop blockname="lootStreetHelper" prob="0.0005" rotatemax="7"/>
+		<blockontop blockname="randomCarsHelper" prob="0.0025" rotatemax="3"/>
+		<blockontop blockname="tire" rotatemax="3" prob="0.00007"/>
+		<blockontop blockname="HDTire" rotatemax="3" prob="0.00002"/>
+		<blockontop blockname="driftwood" rotatemax="3" prob="0.000003"/>
+		<blockontop blockname="driftwood2" rotatemax="3" prob="0.000003"/>
+		<blockontop blockname="graveStone08" rotatemax="3" prob="0.000004"/>
+		<blockontop blockname="mattressFlat" rotatemax="7" prob="0.000003"/>
+		<blockontop blockname="burningBarrel" rotatemax="3" prob="0.00001"/>
+		<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.00002"/>
+		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.00002"/>
+		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.00002"/>
+		<blockontop blockname="rock01" prob="0.00007"/>
+		<blockontop blockname="rock02" prob="0.00007"/>
+		<blockontop blockname="rock04" prob="0.00007"/>
 	</poi>
 	<poi name="Country Road Asphalt" poimapcolor="#272f48" blockname="asphalt">
 		<decal texture="0" face="0" prob="0.005" />
@@ -1737,15 +1711,21 @@ If you do not declare them, the decorations of the main biome are used.
 		<decal texture="13" face="0" prob="0.005" />
 		<decal texture="14" face="0" prob="0.005" />
 		<decal texture="15" face="0" prob="0.005" />
-		<blockontop blockname="lootStreetHelper" prob="0.001" rotatemax="7"/>
-		<blockontop blockname="randomCarsHelper" prob="0.0015" rotatemax="3"/>
-		<blockontop blockname="tire" rotatemax="3" prob="0.001" />
-		<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007" />
-		<blockontop blockname="rock01" prob="0.0007" />
-		<blockontop blockname="rock02" prob="0.0007" />
-		<blockontop blockname="rock04" prob="0.0007" />
+		<blockontop blockname="lootStreetHelper" prob="0.0005" rotatemax="7"/>
+		<blockontop blockname="randomCarsHelper" prob="0.0025" rotatemax="3"/>
+		<blockontop blockname="tire" rotatemax="3" prob="0.00007"/>
+		<blockontop blockname="HDTire" rotatemax="3" prob="0.00002"/>
+		<blockontop blockname="driftwood" rotatemax="3" prob="0.000003"/>
+		<blockontop blockname="driftwood2" rotatemax="3" prob="0.000003"/>
+		<blockontop blockname="graveStone08" rotatemax="3" prob="0.000004"/>
+		<blockontop blockname="mattressFlat" rotatemax="7" prob="0.000003"/>
+		<blockontop blockname="burningBarrel" rotatemax="3" prob="0.00001"/>
+		<blockontop blockname="cinderBlocks01" rotatemax="3" prob="0.00002"/>
+		<blockontop blockname="cinderBlocks02" rotatemax="3" prob="0.00002"/>
+		<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.00002"/>
+		<blockontop blockname="rock01" prob="0.00007"/>
+		<blockontop blockname="rock02" prob="0.00007"/>
+		<blockontop blockname="rock04" prob="0.00007"/>
 		<!--blockontop blockname="potassiumNitrate" prob="0.02" offset="-1"/-->
 	</poi>
 	<poi name="Road Gravel" poimapcolor="#806f52" blockname="gravel" >
