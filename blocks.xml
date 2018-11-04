@@ -19230,7 +19230,7 @@ kind of free
 		<property name="CustomIcon" value="carpentryStation"/>
 		<property name="Material" value="metal"/>
 		<property name="Shape" value="ModelEntity"/>
-		<property name="Model" value="#RHStations2?carpentryStation"/>
+		<property name="Model" value="#ZTLRHStations2?carpentryStation"/>
 		<property name="MultiBlockDim" value="2,2,1"/>
 		<property name="RecipeList" value="carpentryStation"/>
 		<property name="Stacknumber" value="1"/>
